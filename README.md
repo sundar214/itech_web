@@ -33,4 +33,3 @@ This GitHub repository contains the **frontend implementation** of the website, 
 - PHP
 - MySQL Database
 
-## 📂 Project Structure
