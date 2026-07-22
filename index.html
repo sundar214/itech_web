@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>iTech Academy — Tirunelveli</title>
+<link rel="stylesheet" href="index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav id="mainNav">
+  <div class="container nav-inner">
+    <div class="nav-logo" onclick="showPage('home')">
+      <img src="images/img1.png" alt="iTech Academy Logo">
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a onclick="showPage('home')"          class="active" data-page="home">Home</a>
+      <a onclick="showPage('about')"         data-page="about">About</a>
+      <a onclick="showPage('courses')"       data-page="courses">Courses</a>
+      <a onclick="showPage('internship')"    data-page="internship">Internship</a>
+      <a onclick="showPage('examination')"   data-page="examination">Examination</a>
+      <a onclick="showPage('certification')" data-page="certification">Certification</a>
+      <a onclick="showPage('success')"       data-page="success">Success Stories</a>
+      <a onclick="showPage('payment')"       data-page="payment">Pay Fees</a>
+      <a onclick="showPage('enquire')"       data-page="enquire">Enquire</a>
+      <a onclick="showPage('announcements')" data-page="announcements">Announcements</a>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a onclick="showPage('home')"          data-page="home">Home</a>
+    <a onclick="showPage('about')"         data-page="about">About</a>
+    <a onclick="showPage('courses')"       data-page="courses">Courses</a>
+    <a onclick="showPage('internship')"    data-page="internship">Internship</a>
+    <a onclick="showPage('examination')"   data-page="examination">Examination</a>
+    <a onclick="showPage('certification')" data-page="certification">Certification</a>
+    <a onclick="showPage('success')"       data-page="success">Success Stories</a>
+    <a onclick="showPage('payment')"       data-page="payment">Pay Fees</a>
+    <a onclick="showPage('enquire')"       data-page="enquire">Enquire</a>
+    <a onclick="showPage('announcements')" data-page="announcements">Announcements</a>
+  </div>
+</nav>
+
+<!-- ==================== HOME PAGE ==================== -->
+<div class="page active" id="page-home">
+
+  <!-- Single clean slideshow (three-panel decorations removed) -->
+  <div class="three-panel">
+
+    <div class="logo-corner" onclick="showPage('home')">
+      <img src="images/img1.png" alt="iTech Academy Logo">
+    </div>
+
+    <div class="panoramic-slide active"
+         style="background-image:url('images/slide1.jpeg');"></div>
+
+    <div class="panoramic-slide"
+         style="background-image:url('images/slide6.jpg');">
+      <div class="panoramic-content"></div>
+    </div>
+
+    <div class="panoramic-slide"
+         style="background-image:url('images/slide3.jpg');">
+      <div class="panoramic-content"></div>
+    </div>
+
+    <div class="panoramic-slide"
+         style="background-image:url('images/slide4.jpg');">
+      <div class="panoramic-content"></div>
+    </div>
+
+    <div class="panoramic-slide"
+         style="background-image:url('images/slide5.jpg');">
+      <div class="panoramic-content"></div>
+    </div>
+
+    <!-- Navigation arrows -->
+    <div class="slide-arrows">
+      <button onclick="slideChange(-1)">&#8592;</button>
+      <button onclick="slideChange(1)">&#8594;</button>
+    </div>
+
+    <!-- Dots -->
+    <div class="slide-dots" id="slideDots"></div>
+  </div>
+
+  <!-- ===== ANNOUNCEMENT TICKER ===== -->
+<div class="ann-ticker" onclick="showPage('announcements')" title="View Announcements">
+  <div class="ann-ticker-inner">
+    <span class="ann-gif-wrap">
+      <img src="images/new.gif" alt="New" class="ann-gif" style="backdrop-filter: blur(20px);">
+    </span>
+    <span class="ann-ticker-text">
+      <span class="ann-scroll-wrap">
+        <span class="ann-scroll-track">
+          📢 New batches starting soon — Click to view all Announcements &nbsp;&nbsp;&nbsp;
+          🎓 Certification exam slots available — Register now &nbsp;&nbsp;&nbsp;
+          🚀 Internship programs open for enrollment — Apply today &nbsp;&nbsp;&nbsp;
+        </span>
+      </span>
+    </span>
+    <span class="ann-cta">View All →</span>
+  </div>
+</div>
+
+  <!-- Highlights -->
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="section-title">Why <span>iTech Academy</span>?</h2>
+        <p class="section-sub">The most trusted name in computer education in Tirunelveli, delivering excellence since 2010.</p>
+      </div>
+      <div class="grid-2 mb-8">
+        <div class="highlight-card">
+          <div class="highlight-icon">🛡️</div>
+          <div>
+            <strong style="font-family:'Rajdhani',sans-serif;font-size:1.05rem;">Pearson VUE Authorized Center</strong>
+            <p style="font-size:0.875rem;color:var(--muted);margin-top:4px;">Official exam center for globally recognized Pearson VUE certifications right here in Tirunelveli.</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🏆</div>
+          <div>
+            <strong style="font-family:'Rajdhani',sans-serif;font-size:1.05rem;">#1 in Tirunelveli</strong>
+            <p style="font-size:0.875rem;color:var(--muted);margin-top:4px;">Rated the top computer training institute in the region with the highest placement record for 5 consecutive years.</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">📚</div>
+          <div>
+            <strong style="font-family:'Rajdhani',sans-serif;font-size:1.05rem;">30+ Professional Courses</strong>
+            <p style="font-size:0.875rem;color:var(--muted);margin-top:4px;">From basic computer skills to advanced AI &amp; Cloud Computing — we cover every domain of modern IT education.</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🏅</div>
+          <div>
+            <strong style="font-family:'Rajdhani',sans-serif;font-size:1.05rem;">ISO 9001:2015 Certified</strong>
+            <p style="font-size:0.875rem;color:var(--muted);margin-top:4px;">Quality-assured training programs meeting international standards of education and professional development.</p>
+          </div>
+        </div>
+        <div class="highlight-card">
+    <div class="highlight-icon">👨‍🏫</div>
+    <div><strong>Industry-Certified Trainers</strong>
+    <p>Learn from experienced professionals with real-world industry certifications and hands-on expertise.</p></div>
+  </div>
+  <div class="highlight-card">
+    <div class="highlight-icon">🛠️</div>
+    <div><strong>Hands-on Project-Based Learning</strong>
+    <p>Every course includes real projects and practical assignments to build job-ready skills from day one.</p></div>
+  </div>
+  <div class="highlight-card">
+    <div class="highlight-icon">💼</div>
+    <div><strong>100% Placement Assistance</strong>
+    <p>Dedicated placement support with resume building, mock interviews and direct company connections.</p></div>
+  </div>
+  <div class="highlight-card">
+    <div class="highlight-icon">🕐</div>
+    <div><strong>Flexible Batch Timings</strong>
+    <p>Morning, evening and weekend batches available to suit students and working professionals.</p></div>
+  </div>
+  <div class="highlight-card">
+    <div class="highlight-icon">🚀</div>
+    <div><strong>Live Projects &amp; Internships</strong>
+    <p>Work on live industry projects and internship programs with our partner companies for real exposure.</p></div>
+  </div>
+  <div class="highlight-card">
+    <div class="highlight-icon">🎓</div>
+    <div><strong>Government Recognized Certifications</strong>
+    <p>Earn certificates recognized by government bodies and top companies across India.</p></div>
+  </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="hero-grad cta-section">
+    <div class="container">
+      <h2>Ready to Start Your Journey?</h2>
+      <p>Join thousands of successful students who transformed their careers at iTech Academy, Tirunelveli.</p>
+      <button class="btn btn-primary" onclick="showPage('enquire')">Enquire Now →</button>
+    </div>
+  </section>
+</div>
+
+
+<!-- ===== ABOUT PAGE ===== -->
+<div class="page" id="page-about">
+  <div class="hero-grad hero-section">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Since 2008, iTech Academy has been transforming lives through quality computer education in Tirunelveli, Tamil Nadu.</p>
+    </div>
+  </div>
+  <div class="about-three-panel">
+    <div class="about-side-panel left"><img src="images/side4.jpg" alt="iTech Academy"></div>
+    <div class="about-center-content">
+      <h2 class="section-title mb-4" style="text-align:center;">Our <span>History</span></h2>
+      <div style="color:var(--muted);line-height:1.85;font-size:0.92rem;text-align:center;max-width:680px;margin:0 auto;">
+        <p>iTECH is a career development and research company in South India which has been in the business for a while now and has partnered with various companies from different industries, right from startups to the corporate giant. We take great pride and joy in the fact that out of development and research companies in Tirunelveli the industry stalwarts favor us to facilitate their journey into the digital world.</p>
+        <p style="margin-top:14px;">We take this responsibility entrusted on to us very seriously. We are available round the clock to help you and your business advance towards sustainable growth. We are here to create ideal website solutions for you to fulfill all your digital requirements and having such a vast experience with a diverse range of industries definitely helps us in achieving the aim of perfection and everyone's satisfaction.</p>
+        <p style="margin-top:14px;">Our hard working and efficient employees have also been instrumental in making us the best Service. Our diverse workforce consists of best in the industry from all walks of lives and backgrounds. This helps us to understand our client's views and wants better, as we are able to match them with a like-minded consultant who delivers not only what they want but also what they need.</p>
+      </div>
+    </div>
+    <div class="about-side-panel right"><img src="images/side3.jpg" alt="iTech Academy"></div>
+  </div>
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <h2 class="section-title text-center mb-8">The Three <span>Pillars</span></h2>
+      <div class="grid-3 mb-12">
+        <div class="pillar-card">
+          <div class="card-top"></div>
+          <div class="pillar-avatar">👨‍💼</div>
+          <div style="padding:0 22px 28px;">
+            <h3 style="font-size:1.15rem;">Mr. Ram Subramanian</h3>
+            <p style="color:var(--secondary);font-size:0.82rem;font-weight:600;margin:4px 0 10px;">Founder</p>
+            <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;">With over 20 years of experience in IT education, Mr. Ram Subramanian founded iTech Academy with the vision of making quality computer education accessible to every student in Tirunelveli.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="card-top"></div>
+          <div class="pillar-avatar">👩‍🏫</div>
+          <div style="padding:0 22px 28px;">
+            <h3 style="font-size:1.15rem;">Mrs. Uma Perumal</h3>
+            <p style="color:var(--secondary);font-size:0.82rem;font-weight:600;margin:4px 0 10px;">Academic Director</p>
+            <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;">Mrs. Uma Perumal brings her passion for education and curriculum development to iTech Academy, ensuring every program meets industry standards and prepares students for real-world challenges.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="card-top"></div>
+          <div class="pillar-avatar">👨‍💼</div>
+          <div style="padding:0 22px 28px;">
+            <h3 style="font-size:1.15rem;">Mr. Sukumar</h3>
+            <p style="color:var(--secondary);font-size:0.82rem;font-weight:600;margin:4px 0 10px;">CEO</p>
+            <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;">A dynamic leader with strong expertise in marketing and business strategy, Mr. Sukumar leads the organization as CEO, driving innovation, brand growth, and strategic partnerships.</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-4">
+        <div class="value-card"><div class="value-icon">🎯</div><h3 style="font-family:'Rajdhani',sans-serif;font-size:1rem;text-transform:uppercase;margin-bottom:6px;">Mission</h3><p style="font-size:0.85rem;color:var(--muted);">Over the next few years our goal is to harness our talents and skills by permeating our company further with process-centered management. We will find our niche in a competitive world by excelling at what we do.</p></div>
+        <div class="value-card"><div class="value-icon">👁️</div><h3 style="font-family:'Rajdhani',sans-serif;font-size:1rem;text-transform:uppercase;margin-bottom:6px;">Vision</h3><p style="font-size:0.85rem;color:var(--muted);">Our path is to exceed the expectations of every client by offering innovative, exceptional IT solutions, outstanding customer service, increased flexibility, and greater value.</p></div>
+        <div class="value-card"><div class="value-icon">❤️</div><h3 style="font-family:'Rajdhani',sans-serif;font-size:1rem;text-transform:uppercase;margin-bottom:6px;">Values</h3><p style="font-size:0.85rem;color:var(--muted);">Our values define the way we train and guide our students toward successful careers in the IT industry. We are committed to delivering quality education and practical learning.</p></div>
+        <div class="value-card"><div class="value-icon">🏅</div><h3 style="font-family:'Rajdhani',sans-serif;font-size:1rem;text-transform:uppercase;margin-bottom:6px;">Excellence</h3><p style="font-size:0.85rem;color:var(--muted);">We believe excellence is achieved through continuous learning and real-world practice. Our programs emphasize skills that align with current industry demands.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== COURSES PAGE ===== -->
+<div class="page" id="page-courses">
+  <div class="hero-grad hero-section">
+    <div class="container">
+      <h1>Our Courses</h1>
+      <p id="courseCount">30+ industry-aligned courses from basic computer skills to cutting-edge technologies.</p>
+    </div>
+  </div>
+  <section class="section" style="background:#fff">
+    <div class="container"><div id="courseGrid" class="grid-3"></div></div>
+  </section>
+</div>
+
+<!-- ===== COURSE DETAIL PAGE ===== -->
+<div class="page" id="page-courseDetail">
+  <div class="detail-hero" id="detailHero">
+    <div class="container" style="position:relative;z-index:2;width:100%;">
+      <button class="back-link" onclick="showPage('courses')">← Back to Courses</button>
+      <h1 id="detailTitle" style="font-size:clamp(1.6rem,4vw,2.6rem);color:#fff;font-weight:700;text-transform:uppercase;"></h1>
+      <div style="display:flex;gap:16px;align-items:center;margin-top:10px;">
+        <span id="detailDuration" style="color:rgba(255,255,255,0.8);font-size:0.875rem;">⏱ </span>
+        <span class="badge badge-dark">iTech Academy</span>
+      </div>
+    </div>
+  </div>
+  <section class="section" style="background:var(--bg);">
+    <div class="container">
+      <div class="detail-grid">
+        <div>
+          <div class="content-block">
+            <div class="block-title">📖 Course Introduction</div>
+            <p id="detailDesc" style="color:var(--muted);margin-bottom:14px;font-size:0.9rem;"></p>
+            <p id="detailDetail" style="color:var(--text);font-size:0.9rem;line-height:1.75;"></p>
+          </div>
+          <div class="content-block">
+            <div class="block-title">🎯 Topics Covered</div>
+            <div id="detailTopics" class="grid-2" style="gap:10px;"></div>
+          </div>
+          <div class="content-block">
+            <div class="block-title">🔗 Real-World Applications</div>
+            <div id="detailUses" class="grid-2" style="gap:10px;"></div>
+          </div>
+          <div class="content-block">
+            <div class="block-title">💼 Career Opportunities</div>
+            <div id="detailJobs" class="grid-2" style="gap:10px;"></div>
+          </div>
+        </div>
+        <div>
+          <div class="sidebar-card">
+            <h3 style="font-family:'Rajdhani',sans-serif;font-weight:700;margin-bottom:14px;">Course Quick Info</h3>
+            <div class="info-row"><span style="color:var(--muted);">Duration</span><strong id="sidebarDuration"></strong></div>
+            <div class="info-row"><span style="color:var(--muted);">Topics</span><strong id="sidebarTopics"></strong></div>
+            <div class="info-row"><span style="color:var(--muted);">Certificate</span><strong>Yes</strong></div>
+            <div class="info-row"><span style="color:var(--muted);">Mode</span><strong>Offline / Online</strong></div>
+            <div style="margin-top:18px;display:flex;flex-direction:column;gap:10px;">
+              <button class="btn btn-primary" style="justify-content:center;" onclick="showPage('enquire')">Enquire Now →</button>
+              <button id="downloadSyllabusBtn" class="btn btn-outline" style="justify-content:center;width:100%;"
+ onclick="openSyllabusModal(currentSyllabusUrl, document.getElementById('detailTitle').textContent)">📄 Download Syllabus</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== INTERNSHIP PAGE ===== -->
+<div class="page" id="page-internship">
+  <div class="hero-grad hero-section">
+    <div class="container">
+      <h1>Internship Programs</h1>
+      <p>Real projects and internship opportunities with partner companies and startups.</p>
+    </div>
+  </div>
+  <section class="section" style="background:#fff">
+    <div class="container" style="text-align:center;">
+      <h2 style="margin-bottom:20px;">Get Industry Experience</h2>
+      <div class="intern-slideshow-wrap">
+        <div class="intern-slideshow" id="internSlideshow">
+          <div class="intern-slide active"><img src="images/intern5.jpeg" alt="Internship 1"></div>
+          <div class="intern-slide"><img src="images/intern1.jpeg" alt="Internship 2"></div>
+          <div class="intern-slide"><img src="images/intern2.jpeg" alt="Internship 3"></div>
+          <div class="intern-slide"><img src="images/intern6.jpeg" alt="Internship 4"></div>
+          <div class="intern-slide"><img src="images/intern4.jpeg" alt="Internship 5"></div>
+          <div class="intern-slide"><img src="images/intern3.jpeg" alt="Internship 3"></div>
+          <div class="intern-arrows">
+            <button onclick="internSlideChange(-1)">&#8592;</button>
+            <button onclick="internSlideChange(1)">&#8594;</button>
+          </div>
+          <div class="intern-dots" id="internDots"></div>
+        </div>
+      </div>
+      <p style="color:var(--muted);margin-bottom:18px;">Our internship programs match students with projects and partner organisations for real exposure.</p>
+      <p style="color:var(--muted);margin-bottom:20px;">Email <strong id="internEmailDisplay"></strong> with your CV and portfolio.</p>
+      <button class="btn btn-accent" onclick="showPage('enquire')">Apply Now →</button>
+    </div>
+  </section>
+</div>
+
+<!-- ===== EXAMINATION PAGE ===== -->
+<div class="page" id="page-examination">
+  <div class="hero-grad hero-section">
+    <div class="container">
+      <h1>Examinations</h1>
+      <p>We are a Pearson VUE Authorized Test Center. Prepare and certify for globally recognized certifications — all under one roof at iTech Academy, Tirunelveli.</p>
+    </div>
+  </div>
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <h2 style="margin-bottom:10px;">Official Testing Center</h2>
+      <p style="color:var(--muted);margin-bottom:25px;">Authorized exam delivery for Pearson VUE, Kryterion (Webassessor) and Certiport.</p>
+      <button class="btn btn-accent" style="margin-bottom:30px;" onclick="showPage('enquire')">Book an Exam</button>
+      <div class="grid-2" id="examGrid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== CERTIFICATION PAGE ===== -->
+<div class="page" id="page-certification">
+  <div class="hero-grad hero-section">
+    <div class="container">
+      <h1>Certifications</h1>
+      <p>iTech Academy is accredited, authorized, and certified by leading national and international bodies.</p>
+    </div>
+  </div>
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="section-title">Certification <span>Programs</span></h2>
+        <p class="section-sub">We help learners prepare and succeed in global IT certification exams.</p>
+      </div>
+      <div class="grid-3">
+        <div class="cert-card" style="cursor:pointer;" onclick="openCertDetail('cisco')">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><div class="cert-icon-wrap">🌐</div><div><h3 style="font-size:1rem;">Cisco Certifications</h3><p style="font-size:0.78rem;color:var(--muted);margin-top:2px;">CCNA, CCNP Enterprise</p></div></div>
+          <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;">Training and preparation for Cisco networking certifications with practice labs and exam-focused guidance.</p>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--secondary);">View Details →</span>
+        </div>
+        <div class="cert-card" style="cursor:pointer;" onclick="openCertDetail('microsoft')">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><div class="cert-icon-wrap">☁️</div><div><h3 style="font-size:1rem;">Microsoft Certifications</h3><p style="font-size:0.78rem;color:var(--muted);margin-top:2px;">Azure Administrator, MCSA, Fundamentals</p></div></div>
+          <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;">Learn cloud and enterprise technologies with structured Microsoft certification preparation.</p>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--secondary);">View Details →</span>
+        </div>
+        <div class="cert-card" style="cursor:pointer;" onclick="openCertDetail('oracle')">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><div class="cert-icon-wrap">🗄️</div><div><h3 style="font-size:1rem;">Oracle Certifications</h3><p style="font-size:0.78rem;color:var(--muted);margin-top:2px;">OCA, OCP, SQL, Database Admin</p></div></div>
+          <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;">Database administration and SQL certifications designed for aspiring database professionals.</p>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--secondary);">View Details →</span>
+        </div>
+        <div class="cert-card" style="cursor:pointer;" onclick="openCertDetail('ec_council')">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><div class="cert-icon-wrap">🔐</div><div><h3 style="font-size:1rem;">EC-Council Certifications</h3><p style="font-size:0.78rem;color:var(--muted);margin-top:2px;">CEH, CHFI</p></div></div>
+          <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;">Ethical hacking and digital forensics certifications for cybersecurity careers.</p>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--secondary);">View Details →</span>
+        </div>
+        <div class="cert-card" style="cursor:pointer;" onclick="openCertDetail('comptia')">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><div class="cert-icon-wrap">🖥️</div><div><h3 style="font-size:1rem;">CompTIA Certifications</h3><p style="font-size:0.78rem;color:var(--muted);margin-top:2px;">A+, Network+, Security+</p></div></div>
+          <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;">Industry-standard certifications for IT support, networking, and cybersecurity professionals.</p>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--secondary);">View Details →</span>
+        </div>
+        <div class="cert-card" style="cursor:pointer;" onclick="openCertDetail('adobe')">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><div class="cert-icon-wrap">🎨</div><div><h3 style="font-size:1rem;">Adobe &amp; Autodesk</h3><p style="font-size:0.78rem;color:var(--muted);margin-top:2px;">Design &amp; Animation Tools</p></div></div>
+          <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;">Certification preparation for creative design, animation, and multimedia tools.</p>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--secondary);">View Details →</span>
+        </div>
+        <div class="cert-card" style="cursor:pointer;" onclick="openCertDetail('tally')">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><div class="cert-icon-wrap">💰</div><div><h3 style="font-size:1rem;">Tally Certifications</h3><p style="font-size:0.78rem;color:var(--muted);margin-top:2px;">Tally ERP, Tally Prime, GST</p></div></div>
+          <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;">Accounting and GST certification training recognized by businesses across India.</p>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--secondary);">View Details →</span>
+        </div>
+        <div class="cert-card" style="cursor:pointer;" onclick="openCertDetail('hp')">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><div class="cert-icon-wrap">🛠️</div><div><h3 style="font-size:1rem;">HP &amp; Hardware Certifications</h3><p style="font-size:0.78rem;color:var(--muted);margin-top:2px;">Hardware &amp; Support Certifications</p></div></div>
+          <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;">Hardware troubleshooting and technical support certification programs.</p>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--secondary);">View Details →</span>
+        </div>
+        <div class="cert-card" style="cursor:pointer;" onclick="openCertDetail('pl300')">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><div class="cert-icon-wrap">📊</div><div><h3 style="font-size:1rem;">Power BI (PL-300)</h3><p style="font-size:0.78rem;color:var(--muted);margin-top:2px;">Microsoft Power BI Data Analyst</p></div></div>
+          <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;">Data analytics and business intelligence certification with Power BI.</p>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--secondary);">View Details →</span>
+        </div>
+        <div class="cert-card" style="cursor:pointer;" onclick="openCertDetail('mo200')">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><div class="cert-icon-wrap">📝</div><div><h3 style="font-size:1rem;">Microsoft Office (MO-200)</h3><p style="font-size:0.78rem;color:var(--muted);margin-top:2px;">Microsoft Office Specialist – Excel</p></div></div>
+          <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;">Excel certification for office professionals — formulas, charts, pivot tables, and data management.</p>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--secondary);">View Details →</span>
+        </div>
+      </div>
+
+      <!-- Certificate Sample Images -->
+      <div style="margin-top:50px;">
+        <div class="text-center mb-12">
+          <h2 class="section-title">Sample <span>Certificates</span></h2>
+          <p class="section-sub">Real certificates earned by iTech Academy students — globally recognized and industry-valued.</p>
+        </div>
+        <div class="cert-screenshot-grid">
+          <div class="cert-screenshot-item">
+            <img src="https://images.credly.com/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png" alt="Cisco CCNA" onerror="this.src='https://placehold.co/400x250/1a3a6e/ffffff?text=Cisco+CCNA'">
+            <div class="cert-screenshot-caption">🌐 Cisco CCNA Certification</div>
+          </div>
+          <div class="cert-screenshot-item">
+            <img src="https://images.credly.com/images/336eebfc-0ac3-4553-9a67-b402f491f185/azure-administrator-associate-600x600.png" alt="Microsoft Azure" onerror="this.src='https://placehold.co/400x250/0078d4/ffffff?text=Microsoft+Azure'">
+            <div class="cert-screenshot-caption">☁️ Microsoft Azure Administrator</div>
+          </div>
+          <div class="cert-screenshot-item">
+            <img src="https://images.credly.com/images/f0d3fbb9-bfa7-4017-9989-7bde8eaf2584/image.png" alt="CompTIA Security+" onerror="this.src='https://placehold.co/400x250/c8102e/ffffff?text=CompTIA+Security%2B'">
+            <div class="cert-screenshot-caption">🖥️ CompTIA Security+</div>
+          </div>
+          <div class="cert-screenshot-item">
+            <img src="https://images.credly.com/images/bd6f25a2-b7ac-4573-a5be-940e2c5d669d/image.png" alt="AWS Cloud Practitioner" onerror="this.src='https://placehold.co/400x250/ff9900/ffffff?text=AWS+Cloud+Practitioner'">
+            <div class="cert-screenshot-caption">☁️ AWS Cloud Practitioner</div>
+          </div>
+          <div class="cert-screenshot-item">
+            <img src="https://images.credly.com/images/7b2c708c-d28b-46bb-8202-ef44cd4aa9bf/image.png" alt="EC-Council CEH" onerror="this.src='https://placehold.co/400x250/1e3050/ffffff?text=EC-Council+CEH'">
+            <div class="cert-screenshot-caption">🔐 EC-Council CEH</div>
+          </div>
+          <div class="cert-screenshot-item">
+            <img src="https://images.credly.com/images/5db4bda9-cf68-4ce1-bd47-dc28c7b5cdf9/image.png" alt="Oracle Database SQL" onerror="this.src='https://placehold.co/400x250/c74634/ffffff?text=Oracle+Database+SQL'">
+            <div class="cert-screenshot-caption">🗄️ Oracle Database SQL</div>
+          </div>
+          <div class="cert-screenshot-item">
+            <img src="https://images.credly.com/images/ad1f2f73-a37d-4516-a2fc-a8d7534e50f1/image.png" alt="Red Hat RHCSA" onerror="this.src='https://placehold.co/400x250/cc0000/ffffff?text=Red+Hat+RHCSA'">
+            <div class="cert-screenshot-caption">🐧 Red Hat RHCSA</div>
+          </div>
+          <div class="cert-screenshot-item">
+            <img src="https://images.credly.com/images/46defa9a-be27-4d12-8a52-2f538f369463/blob" alt="Power BI PL-300" onerror="this.src='https://placehold.co/400x250/f2c811/000000?text=Power+BI+PL-300'">
+            <div class="cert-screenshot-caption">📊 Microsoft PL-300 Power BI</div>
+          </div>
+          <div class="cert-screenshot-item">
+            <img src="https://images.credly.com/images/3c7847e0-d94a-4e02-8bc9-da3dc18c0093/image.png" alt="MO-200 Excel" onerror="this.src='https://placehold.co/400x250/217346/ffffff?text=MOS+Excel+MO-200'">
+            <div class="cert-screenshot-caption">📝 Microsoft MO-200 Excel</div>
+          </div>
+        </div>
+      </div>
+
+      <p style="text-align:center;margin-top:30px;color:var(--muted);">All training includes live labs, hands-on tasks, and certification guidance.</p>
+      <div style="text-align:center;margin-top:20px;">
+        <h3 style="margin-bottom:8px;">Need help choosing the right certification?</h3>
+        <p style="color:var(--muted);margin-bottom:16px;">Contact our advisors to plan your certification journey.</p>
+        <button class="btn btn-accent" onclick="showPage('enquire')">Talk to us</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== SUCCESS STORIES PAGE ===== -->
+<div class="page" id="page-success">
+  <div class="hero-grad hero-section">
+    <div class="container">
+      <h1>Success Stories</h1>
+      <p>Our students are our pride. Hear from our alumni who are now working at leading tech companies across India.</p>
+    </div>
+  </div>
+  <section class="section" style="background:#fff">
+    <div class="container"><div class="grid-3" id="successGrid"></div></div>
+  </section>
+</div>
+
+<!-- ===== ENQUIRE PAGE ===== -->
+<div class="page" id="page-enquire">
+  <div class="hero-grad hero-section">
+    <div class="container">
+      <h1>Enquire Now</h1>
+      <p>Have questions? Fill out the form below or visit us at iTech Academy, Tirunelveli.</p>
+    </div>
+  </div>
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <div class="grid-2">
+        <div class="form-card">
+          <h2 style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.4rem;text-transform:uppercase;margin-bottom:22px;">Send Us a Message</h2>
+          <form id="enquiryForm">
+            <div class="field"><label>Full Name *</label><input type="text" name="name" id="fName" placeholder="Your full name" maxlength="100" required></div>
+            <div class="form-row">
+              <div class="field"><label>Email *</label><input type="email" name="email" id="fEmail" placeholder="email@example.com" required></div>
+              <div class="field">
+  <label>Phone *</label>
+  <div style="display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;">
+    <input type="tel" name="phone" id="fPhone" placeholder="+91 XXXXX XXXXX" required style="flex:1;min-width:160px;">
+    <button type="button" id="fSendOtpBtn" onclick="sendOtp('fPhone','fOtpSection','fOtpVerified','fSendOtpBtn')" class="btn btn-outline" style="white-space:nowrap;padding:10px 14px;font-size:0.82rem;">Send OTP</button>
+  </div>
+  <div id="fOtpSection" style="display:none;margin-top:10px;">
+    <label style="font-size:0.8rem;color:var(--muted);margin-bottom:6px;display:block;">Enter 4-digit OTP</label>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+      <div style="display:flex;gap:6px;">
+        <input type="text" maxlength="1" class="otp-box" data-form="f" style="width:42px;height:42px;text-align:center;font-size:1.2rem;font-weight:700;border:2px solid var(--border);border-radius:8px;padding:0;">
+        <input type="text" maxlength="1" class="otp-box" data-form="f" style="width:42px;height:42px;text-align:center;font-size:1.2rem;font-weight:700;border:2px solid var(--border);border-radius:8px;padding:0;">
+        <input type="text" maxlength="1" class="otp-box" data-form="f" style="width:42px;height:42px;text-align:center;font-size:1.2rem;font-weight:700;border:2px solid var(--border);border-radius:8px;padding:0;">
+        <input type="text" maxlength="1" class="otp-box" data-form="f" style="width:42px;height:42px;text-align:center;font-size:1.2rem;font-weight:700;border:2px solid var(--border);border-radius:8px;padding:0;">
+      </div>
+      <button type="button" onclick="verifyOtp('fPhone','fOtpSection','fOtpVerified','f')" class="btn btn-primary" style="font-size:0.82rem;padding:10px 14px;">Verify</button>
+    </div>
+    <div id="fOtpVerified" style="display:none;color:#16a34a;font-size:0.82rem;font-weight:600;margin-top:6px;">✅ Phone verified!</div>
+  </div>
+</div>
+            </div>
+            <div class="field">
+              <label>Course / Internship of Interest</label>
+              <select id="fCourse" name="course"><option value="">Select a course or internship</option></select>
+            </div>
+            <div class="field"><label>Message</label><textarea name="message" id="fMsg" placeholder="Your message..."></textarea></div>
+            <button type="submit" class="btn btn-accent" style="width:100%;justify-content:center;">📨 Send Enquiry</button>
+          </form>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <div class="form-card" style="padding:26px;">
+            <h2 style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.3rem;text-transform:uppercase;margin-bottom:18px;">Contact Information</h2>
+            <div style="display:flex;flex-direction:column;gap:14px;">
+              <div class="contact-item"><span class="contact-icon">📍</span><div><div style="font-weight:500;font-size:0.875rem;">Address</div><div style="color:var(--muted);font-size:0.875rem;">#28, 2nd Floor Nisa complex, Tiruchedur road, Murugankuruchi, Palai (Opp: City Union Bank) Tirunelveli-627002. TAMILNADU, INDIA</div></div></div>
+              <div class="contact-item"><span class="contact-icon">📞</span><div><div style="font-weight:500;font-size:0.875rem;">Phone</div><div style="color:var(--muted);font-size:0.875rem;">+91-462-4001400, 9159333359.</div></div></div>
+              <div class="contact-item"><span class="contact-icon">✉️</span><div><div style="font-weight:500;font-size:0.875rem;">Email</div><div style="color:var(--muted);font-size:0.875rem;" id="contactEmailDisplay"></div></div></div>
+              <div class="contact-item"><span class="contact-icon">🕐</span><div><div style="font-weight:500;font-size:0.875rem;">Hours</div><div style="color:var(--muted);font-size:0.875rem;">Mon - Sat: 9:00 AM - 8:00 PM</div></div></div>
+            </div>
+          </div>
+          <div style="background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.07);">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5636.078662725732!2d77.73381580845735!3d8.725972887146346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0411f7092807c9%3A0x10d8046f4629d18f!2siTech%20Academy!5e0!3m2!1sen!2sin!4v1773126975763!5m2!1sen!2sin" width="100%" height="260" style="border:0;display:block;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PAYMENT PAGE ===== -->
+<div class="page" id="page-payment">
+  <div class="hero-grad hero-section">
+    <div class="container">
+      <h1>Payments</h1>
+      <p>Securely pay your course fees, registration charges, or exam booking fees online.</p>
+    </div>
+  </div>
+  <section class="section" style="background:#fff">
+    <div class="container" style="max-width:760px;">
+      <div class="text-center mb-12">
+        <h2 class="section-title">Choose <span>Payment Type</span></h2>
+        <p class="section-sub">Select what you are paying for and complete the payment securely.</p>
+      </div>
+      <div class="grid-2" style="margin-bottom:28px;" id="paymentOptions">
+        <div class="payment-option" onclick="selectPayment(this,'Course Fee','Course fee payment for iTech Academy')"><span class="payment-icon">📚</span><div><strong style="font-family:'Rajdhani',sans-serif;font-size:1rem;">Course Fee</strong><div style="font-size:0.8rem;color:var(--muted);">Pay tuition for any course</div></div></div>
+        <div class="payment-option" onclick="selectPayment(this,'Exam Booking Fee','Exam booking/registration fee')"><span class="payment-icon">🏅</span><div><strong style="font-family:'Rajdhani',sans-serif;font-size:1rem;">Exam Booking Fee</strong><div style="font-size:0.8rem;color:var(--muted);">Register for Pearson VUE / Certiport</div></div></div>
+        <div class="payment-option" onclick="selectPayment(this,'Registration Fee','New student registration fee')"><span class="payment-icon">📝</span><div><strong style="font-family:'Rajdhani',sans-serif;font-size:1rem;">Registration Fee</strong><div style="font-size:0.8rem;color:var(--muted);">New student enrollment</div></div></div>
+        <div class="payment-option" onclick="selectPayment(this,'Other Payment','Miscellaneous / other payment')"><span class="payment-icon">💳</span><div><strong style="font-family:'Rajdhani',sans-serif;font-size:1rem;">Other / Miscellaneous</strong><div style="font-size:0.8rem;color:var(--muted);">Any other commitment payment</div></div></div>
+      </div>
+      <div class="form-card" id="paymentForm" style="display:none;">
+        <div style="height:4px;background:linear-gradient(90deg,var(--secondary),var(--accent));border-radius:4px;margin-bottom:22px;"></div>
+        <h3 style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.2rem;text-transform:uppercase;margin-bottom:20px;" id="paymentFormTitle">Payment Details</h3>
+        <div class="form-row">
+          <div class="field"><label>Full Name *</label><input type="text" id="payName" placeholder="Your full name" required></div>
+          <div class="field">
+  <label>Phone *</label>
+  <div style="display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;">
+    <input type="tel" id="payPhone" placeholder="+91 XXXXX XXXXX" required style="flex:1;min-width:160px;">
+    <button type="button" onclick="sendOtp('payPhone','payOtpSection','payOtpVerified','paySendOtpBtn')" id="paySendOtpBtn" class="btn btn-outline" style="white-space:nowrap;padding:10px 14px;font-size:0.82rem;">Send OTP</button>
+  </div>
+  <div id="payOtpSection" style="display:none;margin-top:10px;">
+    <label style="font-size:0.8rem;color:var(--muted);margin-bottom:6px;display:block;">Enter 4-digit OTP</label>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+      <div style="display:flex;gap:6px;">
+        <input type="text" maxlength="1" class="otp-box" data-form="pay" style="width:42px;height:42px;text-align:center;font-size:1.2rem;font-weight:700;border:2px solid var(--border);border-radius:8px;padding:0;">
+        <input type="text" maxlength="1" class="otp-box" data-form="pay" style="width:42px;height:42px;text-align:center;font-size:1.2rem;font-weight:700;border:2px solid var(--border);border-radius:8px;padding:0;">
+        <input type="text" maxlength="1" class="otp-box" data-form="pay" style="width:42px;height:42px;text-align:center;font-size:1.2rem;font-weight:700;border:2px solid var(--border);border-radius:8px;padding:0;">
+        <input type="text" maxlength="1" class="otp-box" data-form="pay" style="width:42px;height:42px;text-align:center;font-size:1.2rem;font-weight:700;border:2px solid var(--border);border-radius:8px;padding:0;">
+      </div>
+      <button type="button" onclick="verifyOtp('payPhone','payOtpSection','payOtpVerified','pay')" class="btn btn-primary" style="font-size:0.82rem;padding:10px 14px;">Verify</button>
+    </div>
+    <div id="payOtpVerified" style="display:none;color:#16a34a;font-size:0.82rem;font-weight:600;margin-top:6px;">✅ Phone verified!</div>
+  </div>
+</div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Email *</label><input type="email" id="payEmail" placeholder="email@example.com" required></div>
+          <div class="field"><label>Amount (₹) *</label><input type="number" id="payAmount" placeholder="Enter amount" min="1" required></div>
+        </div>
+        <div class="field"><label>Course / Purpose</label><input type="text" id="payPurpose" placeholder="e.g. Full Stack Web Development – Month 1"></div>
+        <div class="field"><label>Remarks</label><textarea id="payRemarks" placeholder="Any additional details..." style="min-height:70px;"></textarea></div>
+        <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:10px;padding:18px 20px;margin-bottom:20px;">
+        <button class="btn btn-accent" style="width:100%;justify-content:center;" onclick="submitPayment()">✅ Confirm Payment</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== ANNOUNCEMENTS PAGE ===== -->
+<div class="page" id="page-announcements">
+  <div class="hero-grad hero-section">
+    <div class="container">
+      <h1>Announcements</h1>
+      <p>Stay updated with the latest events, workshops, and programs at iTech Academy, Tirunelveli.</p>
+    </div>
+  </div>
+  <section class="section" style="background:#fff">
+    <div class="container" style="max-width:900px;">
+      <div id="announcementsContainer">
+        <div class="ann-loading" id="annLoading">
+          <div style="font-size:2rem;margin-bottom:12px;">📢</div>
+          <p style="color:var(--muted);">Loading announcements...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== POLICY PAGES ===== -->
+<div class="page" id="page-terms">
+  <div class="hero-grad hero-section"><div class="container"><button class="back-link" onclick="showPage('home')">← Back</button><h1>Terms &amp; Conditions</h1></div></div>
+  <div class="policy-page-wrap">
+    <div class="policy-side-img"><img src="images/tr.jpg" alt="Terms"></div>
+    <div class="policy-content">
+      <h2>Terms &amp; Conditions</h2><div class="policy-sub">Last updated: March 2026</div>
+      <p>Welcome to our website. If you continue to browse and use this website you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern iTech's relationship with you in relation to this website.</p>
+      <p>The term 'iTech' or 'us' or 'we' refers to the owner of the website whose registered office is #28, 2nd Floor Nisa Complex, Tiruchedur Road, Murugankuruchi, Palai (Opp: City Union Bank), Tirunelveli – 627002, Tamil Nadu, India. The term 'you' refers to the user or viewer of our website.</p>
+      <p>The use of this website is subject to the following terms of use:</p>
+      <ul>
+        <li>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</li>
+        <li>Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</li>
+        <li>Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements.</li>
+        <li>This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</li>
+        <li>All trademarks reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website.</li>
+        <li>Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offence.</li>
+        <li>From time to time this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).</li>
+        <li>You may not create a link to this website from another website or document without iTech's prior written consent.</li>
+        <li>Your use of this website and any dispute arising out of such use of the website is subject to the laws of India or other regulatory authority.</li>
+        <li>"We as a merchant shall be under no liability whatsoever in respect of any loss or damage arising directly or indirectly out of the decline of authorization for any Transaction, on Account of the Cardholder having exceeded the preset limit mutually agreed by us with our acquiring bank from time to time".</li>
+      </ul>
+    </div>
+  </div>
+</div>
+ 
+<div class="page" id="page-privacy">
+  <div class="hero-grad hero-section"><div class="container"><button class="back-link" onclick="showPage('home')">← Back</button><h1>Privacy Policy</h1></div></div>
+  <div class="policy-page-wrap">
+    <div class="policy-side-img"><img src="images/pr.jpg" alt="Privacy"></div>
+    <div class="policy-content">
+      <h2>Privacy Policy</h2><div class="policy-sub">Last updated: March 2026</div>
+      <p>This privacy policy sets out how iTech uses and protects any information that you give iTech when you use this website. iTech is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.</p>
+      <p>iTech may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes. This policy is effective from 01-11-2020.</p>
+      <h3>What we collect</h3>
+      <p>We may collect the following information:</p>
+      <ul>
+        <li>Name and job title</li>
+        <li>Contact information including email address</li>
+        <li>Demographic information such as postcode, preferences and interests</li>
+        <li>Other information relevant to customer surveys and/or offers</li>
+      </ul>
+      <h3>What we do with the information we gather</h3>
+      <p>We require this information to understand your needs and provide you with a better service, and in particular for the following reasons:</p>
+      <ul>
+        <li>Internal record keeping.</li>
+        <li>We may use the information to improve our products and services.</li>
+        <li>We may periodically send promotional emails about new products, special offers or other information which we think you may find interesting using the email address which you have provided.</li>
+        <li>From time to time, we may also use your information to contact you for market research purposes. We may contact you by email, phone, fax or mail. We may use the information to customise the website according to your interests.</li>
+      </ul>
+      <h3>Security</h3>
+      <p>We are committed to ensuring that your information is secure. In order to prevent unauthorised access or disclosure we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online.</p>
+      <h3>How we use cookies</h3>
+      <p>A cookie is a small file which asks permission to be placed on your computer's hard drive. Once you agree, the file is added and the cookie helps analyse web traffic or lets you know when you visit a particular site. Cookies allow web applications to respond to you as an individual. The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences.</p>
+      <p>We use traffic log cookies to identify which pages are being used. This helps us analyse data about web page traffic and improve our website in order to tailor it to customer needs. We only use this information for statistical analysis purposes and then the data is removed from the system.</p>
+      <p>Overall, cookies help us provide you with a better website, by enabling us to monitor which pages you find useful and which you do not. A cookie in no way gives us access to your computer or any information about you, other than the data you choose to share with us. You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. This may prevent you from taking full advantage of the website.</p>
+      <h3>Links to other websites</h3>
+      <p>Our website may contain links to other websites of interest. However, once you have used these links to leave our site, you should note that we do not have any control over that other website. Therefore, we cannot be responsible for the protection and privacy of any information which you provide whilst visiting such sites and such sites are not governed by this privacy statement. You should exercise caution and look at the privacy statement applicable to the website in question.</p>
+      <h3>Controlling your personal information</h3>
+      <p>You may choose to restrict the collection or use of your personal information in the following ways:</p>
+      <ul>
+        <li>Whenever you are asked to fill in a form on the website, look for the box that you can click to indicate that you do not want the information to be used by anybody for direct marketing purposes.</li>
+        <li>If you have previously agreed to us using your personal information for direct marketing purposes, you may change your mind at any time by writing to or emailing us at info@itechacademy.in</li>
+      </ul>
+      <p>We will not sell, distribute or lease your personal information to third parties unless we have your permission or are required by law to do so. We may use your personal information to send you promotional information about third parties which we think you may find interesting if you tell us that you wish this to happen.</p>
+      <p>You may request details of personal information which we hold about you under the Data Protection Act 1998. A small fee will be payable. If you would like a copy of the information held on you please write to iTech, #28, 2nd Floor Nisa Complex, Tiruchedur Road, Murugankuruchi, Palai (Opp: City Union Bank), Tirunelveli – 627002, Tamil Nadu, India.</p>
+      <p>If you believe that any information we are holding on you is incorrect or incomplete, please write to or email us as soon as possible at the above address. We will promptly correct any information found to be incorrect.</p>
+      <h3>Contacting Us</h3>
+      <p>If there are any questions regarding this privacy policy you may contact us using the information below:</p>
+      <p>
+        iTech Academy<br>
+        #28, 2nd Floor Nisa Complex,<br>
+        Tiruchedur Road, Murugankuruchi, Palai<br>
+        (Opp: City Union Bank)<br>
+        Tirunelveli – 627002, Tamil Nadu, India<br>
+        📞 +91-462-4001400, 9159333359<br>
+        ✉️ info@itechacademy.in / itechacademy@gmail.com
+      </p>
+    </div>
+  </div>
+</div>
+ 
+<div class="page" id="page-refund">
+  <div class="hero-grad hero-section"><div class="container"><button class="back-link" onclick="showPage('home')">← Back</button><h1>Cancellation &amp; Refund Policy</h1></div></div>
+  <div class="policy-page-wrap">
+    <div class="policy-side-img"><img src="images/re.jpg" alt="Refund"></div>
+    <div class="policy-content">
+      <h2>Cancellation &amp; Refund</h2><div class="policy-sub">Last updated: March 2026</div>
+      <h3>Cancellation Policy</h3>
+      <p>iTech believes in helping its customers as far as possible, and has therefore a liberal cancellation policy. Under this policy:</p>
+      <ul>
+        <li>Cancellations will be considered only if the request is made within 72 hours of placing an order. However, the cancellation request will not be entertained if the orders have been communicated to the vendors/merchants and they have initiated the process of shipping them.</li>
+        <li>There is no cancellation of orders placed under the Same Day Delivery category.</li>
+        <li>No cancellations are entertained for those products that the iTech marketing team has obtained on special occasions like Pongal, Diwali, Valentine's Day etc. These are limited occasion offers and therefore cancellations are not possible.</li>
+        <li>iTech does not accept cancellation requests for perishable items like flowers, eatables etc. However, refund/replacement can be made if the customer establishes that the quality of product delivered is not good.</li>
+        <li>In case of receipt of damaged or defective consumer durable items and non-durable items like mobile phones, mixer grinder, calculator etc, please report the same to our Customer Service team. The request will, however, be entertained once the merchant has checked and determined the same at his own end. This should be reported within 21 days of receipt of the products. For books, VCDs, DVDs, software products, the matter should be reported within 5 days.</li>
+        <li>In case you feel that the product received is not as shown on the site or as per your expectations, you must bring it to the notice of our customer service within 24 hours of receiving the product. The Customer Service Team after looking into your complaint will take an appropriate decision.</li>
+        <li>In case of complaints regarding products that come with a warranty from manufacturers, please refer the issue to them.</li>
+      </ul>
+      <h3>Refund Policy</h3>
+      <p>When you buy our products/services, your purchase is covered by our 30-day money-back guarantee. If you are, for any reason, not entirely happy with your purchase, we will cheerfully issue a full refund. We develop and sell software that we use ourselves every day and have thousands of satisfied customers worldwide, and our support is second to none. That is why we can afford to back our products with this special guarantee.</p>
+      <p>To request a refund, simply contact us with your purchase details within ninety (90) days of your purchase. Please include your order number (sent to you via email after ordering) and optionally tell us why you're requesting a refund – we take customer feedback very seriously and use it to constantly improve our products and quality of service. Refunds are not being provided for services delivered in full such as installation service and provided knowledge base hosting service. Refunds are being processed within 21 days period.</p>
+    </div>
+  </div>
+</div>
+ 
+<div class="page" id="page-disclaimer">
+  <div class="hero-grad hero-section"><div class="container"><button class="back-link" onclick="showPage('home')">← Back</button><h1>Disclaimer</h1></div></div>
+  <div class="policy-page-wrap">
+    <div class="policy-side-img"><img src="images/dis.jpg" alt="Disclaimer"></div>
+    <div class="policy-content">
+      <h2>Disclaimer</h2><div class="policy-sub">Last updated: March 2026</div>
+      <p>The information contained in this website is for general information purposes only. The information is provided by iTech and while we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>
+      <p>In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.</p>
+      <p>Through this website you are able to link to other websites which are not under the control of iTech. We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.</p>
+      <p>Every effort is made to keep the website up and running smoothly. However, iTech takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODALS ===== -->
+<div class="modal-overlay" id="syllabusModal">
+  <div class="modal-box" style="max-width:480px;">
+    <div class="modal-header"><h3>📄 <span id="syllabusModalTitle"></span></h3><button class="modal-close" onclick="closeSyllabusModal()">✕</button></div>
+    <div class="modal-body" style="padding:12px 16px;"><iframe id="syllabusIframe" src="" style="width:100%;height:400px;border:1px solid var(--border);border-radius:10px;display:block;" title="Syllabus Preview"></iframe></div>
+    <div class="modal-footer"><button class="btn btn-outline" onclick="closeSyllabusModal()">Close</button><button class="btn btn-accent" onclick="openSyllabusLeadForm()">📥 Download Full PDF</button></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="syllabusLeadModal">
+  <div class="modal-box modal-sm">
+    <div class="modal-header"><h3>📥 Get Your Free Syllabus</h3><button class="modal-close" onclick="closeSyllabusLeadModal()">✕</button></div>
+    <div class="modal-body">
+      <p style="font-size:0.875rem;color:var(--muted);margin-bottom:18px;">Enter your details to download the syllabus.</p>
+      <form id="syllabusLeadForm">
+        <div class="field"><label>Full Name *</label><input type="text" id="slName" placeholder="Your name" required></div>
+        <div class="field"><label>Email *</label><input type="email" id="slEmail" placeholder="email@example.com" required></div>
+         <div class="field">
+  <label>Phone *</label>
+  <div style="display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;">
+    <input type="tel" id="slPhone" placeholder="+91 XXXXX XXXXX" required style="flex:1;min-width:160px;">
+    <button type="button" onclick="sendOtp('slPhone','slOtpSection','slOtpVerified','slSendOtpBtn')" id="slSendOtpBtn" class="btn btn-outline" style="white-space:nowrap;padding:10px 14px;font-size:0.82rem;">Send OTP</button>
+  </div>
+  <div id="slOtpSection" style="display:none;margin-top:10px;">
+    <label style="font-size:0.8rem;color:var(--muted);margin-bottom:6px;display:block;">Enter 4-digit OTP</label>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+      <div style="display:flex;gap:6px;">
+        <input type="text" maxlength="1" class="otp-box" data-form="sl" style="width:42px;height:42px;text-align:center;font-size:1.2rem;font-weight:700;border:2px solid var(--border);border-radius:8px;padding:0;">
+        <input type="text" maxlength="1" class="otp-box" data-form="sl" style="width:42px;height:42px;text-align:center;font-size:1.2rem;font-weight:700;border:2px solid var(--border);border-radius:8px;padding:0;">
+        <input type="text" maxlength="1" class="otp-box" data-form="sl" style="width:42px;height:42px;text-align:center;font-size:1.2rem;font-weight:700;border:2px solid var(--border);border-radius:8px;padding:0;">
+        <input type="text" maxlength="1" class="otp-box" data-form="sl" style="width:42px;height:42px;text-align:center;font-size:1.2rem;font-weight:700;border:2px solid var(--border);border-radius:8px;padding:0;">
+      </div>
+      <button type="button" onclick="verifyOtp('slPhone','slOtpSection','slOtpVerified','sl')" class="btn btn-primary" style="font-size:0.82rem;padding:10px 14px;">Verify</button>
+    </div>
+    <div id="slOtpVerified" style="display:none;color:#16a34a;font-size:0.82rem;font-weight:600;margin-top:6px;">✅ Phone verified!</div>
+  </div>
+</div>
+        <button type="submit" class="btn btn-accent" style="width:100%;justify-content:center;margin-top:4px;">📩 Send &amp; Download</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="certDetailModal">
+  <div class="modal-box modal-lg">
+    <div class="modal-header">
+      <div style="display:flex;align-items:center;gap:12px;"><span id="certModalIcon" style="font-size:1.8rem;"></span><div><h3 id="certModalTitle" style="margin:0;"></h3><p id="certModalSubtitle" style="font-size:0.8rem;color:var(--muted);font-family:'DM Sans',sans-serif;font-weight:400;text-transform:none;margin-top:2px;"></p></div></div>
+      <button class="modal-close" onclick="closeCertDetailModal()">✕</button>
+    </div>
+    <div class="modal-body" style="display:flex;flex-direction:column;gap:22px;">
+      <p id="certModalDesc" style="color:var(--muted);font-size:0.9rem;line-height:1.75;"></p>
+      <div><div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--secondary);margin-bottom:12px;">🎯 Topics Covered</div><div id="certModalModules" style="display:flex;flex-direction:column;gap:8px;"></div></div>
+      <div><div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--secondary);margin-bottom:12px;">🏅 Certification Exams</div><div id="certModalExams" style="display:flex;flex-wrap:wrap;gap:8px;"></div></div>
+      <div><div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--secondary);margin-bottom:12px;">⏱ Duration</div><p id="certModalDuration" style="font-size:0.9rem;color:var(--text);font-weight:600;"></p></div>
+      <div><div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--secondary);margin-bottom:12px;">💼 Career Opportunities</div><div id="certModalJobs" class="cert-modal-jobs"></div></div>
+    </div>
+    <div class="modal-footer"><button class="btn btn-outline" onclick="closeCertDetailModal()">Close</button><button class="btn btn-accent" onclick="closeCertDetailModal();showPage('enquire')">Enquire Now →</button></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">itech<span>Academy</span></div>
+        <p style="font-size:0.8rem;line-height:1.5;">Empowering careers through world-class computer training and certifications in Tirunelveli since 2010.</p>
+        <div style="display:flex;gap:10px;margin-top:10px;align-items:center;">
+          <a href="https://www.facebook.com/itech.nellai.9" style="color:white;"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2.3V12h2.3V9.8c0-2.3 1.3-3.6 3.4-3.6.99 0 2.03.18 2.03.18v2.2h-1.14c-1.12 0-1.46.7-1.46 1.41V12h2.5l-.4 2.9h-2.1v7A10 10 0 0022 12"/></svg></a>
+          <a href="https://www.instagram.com/itech._.academy/" style="color:white;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-head">Quick Links</div>
+        <div class="footer-links">
+          <a onclick="showPage('about')">About Us</a>
+          <a onclick="showPage('courses')">Courses</a>
+          <a onclick="showPage('success')">Success Stories</a>
+          <a onclick="showPage('announcements')">Announcements</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-head">Programs</div>
+        <div class="footer-links">
+          <a onclick="showPage('internship')">Internship</a>
+          <a onclick="showPage('examination')">Examination</a>
+          <a onclick="showPage('certification')">Certification</a>
+          <a onclick="showPage('payment')">Pay Fees</a>
+          <a onclick="showPage('enquire')">Enquire Now</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-head">Contact Us</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:0.85rem;">
+          <div style="display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--secondary);">📍</span><span>#28, 2nd Floor Nisa complex, Tiruchedur road, Murugankuruchi, Palai (Opp: City Union Bank) Tirunelveli-627002. TAMILNADU, INDIA</span></div>
+          <div style="display:flex;gap:8px;align-items:center;"><span style="color:var(--secondary);">📞</span><span>+91-462-4001400, 9159333359.</span></div>
+          <div style="display:flex;gap:8px;align-items:center;"><span style="color:var(--secondary);">✉️</span><span id="footerEmailDisplay"></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> iTech Academy, Tirunelveli. All Rights Reserved.</div>
+      <div style="display:flex;gap:16px;">
+        <a onclick="showPage('terms')">Terms</a>
+        <a onclick="showPage('privacy')">Privacy</a>
+        <a onclick="showPage('refund')">Cancellation &amp; Refund</a>
+        <a onclick="showPage('disclaimer')">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+  <div class="toast-title" id="toastTitle"></div>
+  <div id="toastMsg"></div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
+
+function updateNavStyle(pageName) {
+  const nav = document.getElementById('mainNav');
+  if (pageName === 'home') {
+    nav.classList.remove('nav-solid');
+    nav.style.position = 'absolute';
+  } else {
+    nav.classList.add('nav-solid');
+    nav.style.position = 'sticky';
+    nav.style.top = '0';
+  }
+}
+// ✅ PUT AT TOP
+let pendingSyllabusUrl = '';
+let currentSyllabusUrl = '#';
+
+// ================================================================
+//  DATA
+// ================================================================
+const courses = [
+  { id:"fullstack", title:"Full Stack Web Development (Python)", duration:"6 Months", syllabus:"PDF/I TECH_SYLLABUS_PYTHON_FULLSTACK.pdf", desc:"Become a complete web developer mastering frontend, backend, databases, APIs and deployment using Python and modern technologies.", detail:"Comprehensive full stack development program covering frontend technologies like HTML, CSS, JavaScript and React, backend development using Python/Django or Flask, and database management with PostgreSQL/MongoDB.", topics:["HTML, CSS & Responsive Design","JavaScript Fundamentals","React.js Frontend Development","Python Backend (Django/Flask)","Database Management","REST API Development","Authentication & Deployment"], uses:["Business web applications","E-commerce websites","Startup product development","SaaS platforms"], jobs:["Full Stack Developer","Web Developer","Python Developer","Software Engineer"] },
+  { id:"java-fullstack", title:"Java Full Stack Development", duration:"6 Months", syllabus:"PDF/I TECH_SYLLABUS_JAVA_FULLSTACK.pdf", desc:"Master Java-based full stack development covering Spring Boot, React, and enterprise application development.", detail:"Industry-focused Java full stack program covering Core Java, Spring Boot backend, React frontend, RESTful APIs, Hibernate ORM, and MySQL database.", topics:["Core Java & OOP","Spring Boot Backend","React.js Frontend","Hibernate & JPA","MySQL Database","REST APIs","Microservices Basics"], uses:["Enterprise applications","Banking software","E-commerce platforms","Corporate systems"], jobs:["Java Developer","Full Stack Developer","Backend Developer","Software Engineer"] },
+  { id:"react-js", title:"React JS Development", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_REACT JS.pdf", desc:"Master modern frontend development with React.js including hooks, state management, and building dynamic web applications.", detail:"Focused React.js training covering components, hooks, Redux state management, React Router, API integration, and deployment.", topics:["React Fundamentals","Components & Props","Hooks & State Management","Redux","React Router","API Integration","Deployment"], uses:["Single page applications","Dynamic dashboards","E-commerce frontends","Web portals"], jobs:["React Developer","Frontend Developer","UI Developer","JavaScript Developer"] },
+  { id:"angular-js", title:"Angular JS Development", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_ANGULAR JS.pdf", desc:"Learn enterprise-grade frontend development with Angular framework including TypeScript and component architecture.", detail:"Comprehensive Angular training covering TypeScript, components, services, directives, routing, forms, and HTTP client.", topics:["TypeScript Fundamentals","Angular Components","Services & Dependency Injection","Routing & Navigation","Forms & Validation","HTTP Client","Deployment"], uses:["Enterprise web apps","Admin dashboards","Corporate portals","SPA development"], jobs:["Angular Developer","Frontend Developer","UI Engineer","JavaScript Developer"] },
+  { id:"javascript", title:"JavaScript Programming", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_JAVASCRIPT.pdf", desc:"Master modern JavaScript from fundamentals to advanced concepts including ES6+, DOM manipulation, and async programming.", detail:"Complete JavaScript course covering variables, functions, DOM manipulation, ES6+ features, promises, async/await, and browser APIs.", topics:["JS Fundamentals & ES6+","DOM Manipulation","Functions & Closures","Async Programming","Promises & Fetch API","OOP in JavaScript","Browser APIs"], uses:["Web interactivity","Frontend scripting","API integration","Browser automation"], jobs:["JavaScript Developer","Frontend Developer","Web Developer","UI Developer"] },
+  { id:"html-css", title:"HTML & Web Development", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_HTML.pdf", desc:"Learn web development from scratch with HTML5, CSS3, responsive design and modern web standards.", detail:"Foundation web development course covering HTML5 structure, CSS3 styling, Flexbox, Grid, responsive design, and basic JavaScript.", topics:["HTML5 Structure & Tags","CSS3 Styling","Flexbox & Grid","Responsive Design","Forms & Validation","Basic JavaScript","Website Deployment"], uses:["Personal websites","Business landing pages","Portfolio sites","Web templates"], jobs:["Web Designer","Frontend Developer","UI Designer","Web Developer"] },
+  { id:"devops", title:"DevOps Engineering", duration:"4 Months", syllabus:"PDF/I TECH_SYLLABUS_DEVOPS.pdf", desc:"Master DevOps practices including CI/CD pipelines, Docker, Kubernetes, and cloud infrastructure automation.", detail:"Industry-focused DevOps program covering Linux, Git, Docker, Kubernetes, Jenkins CI/CD, Ansible, Terraform, and AWS/Azure cloud platforms.", topics:["Linux & Shell Scripting","Git & Version Control","Docker Containers","Kubernetes Orchestration","Jenkins CI/CD","Ansible & Terraform","AWS/Azure DevOps"], uses:["Deployment automation","Infrastructure management","Cloud operations","Microservices"], jobs:["DevOps Engineer","Cloud Engineer","Site Reliability Engineer","Infrastructure Engineer"] },
+  { id:"aws-cloud", title:"AWS Cloud Architecture", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_AWS_CLOUD_ARCHITECT.pdf", desc:"Master Amazon Web Services cloud platform covering core services, architecture design, and AWS certification preparation.", detail:"Comprehensive AWS training covering EC2, S3, RDS, Lambda, VPC, IAM, CloudFormation, and cloud architecture best practices.", topics:["AWS Core Services","EC2 & S3","RDS & DynamoDB","Lambda & Serverless","VPC & Networking","IAM & Security","CloudFormation"], uses:["Cloud hosting","Serverless apps","Data storage","Cloud migration"], jobs:["AWS Cloud Engineer","Cloud Architect","Solutions Architect","Cloud Administrator"] },
+  { id:"aws-cloud-pr", title:"AWS Cloud Practitioner", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_AWS_CLOUD_PRACTITIONER.pdf", desc:"Foundation-level AWS cloud training for beginners covering core services and AWS Cloud Practitioner certification.", detail:"Entry-level AWS course covering cloud concepts, core AWS services, security, pricing, and support.", topics:["Cloud Concepts","AWS Global Infrastructure","Core AWS Services","Security & Compliance","Pricing & Billing","Support Plans","CLF-C02 Exam Prep"], uses:["Cloud fundamentals","Business cloud adoption","IT foundations","Career transition"], jobs:["Cloud Support","IT Administrator","Technical Sales","Cloud Consultant"] },
+  { id:"azure-ai", title:"Microsoft Azure AI (AI-102)", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_MICROSOFT AZURE_AI-102.pdf", desc:"Master Azure AI services including cognitive services, machine learning, and AI solution development on Microsoft Azure.", detail:"Advanced Azure AI training covering Azure Cognitive Services, Azure Machine Learning, Bot Framework, language understanding, and computer vision.", topics:["Azure Cognitive Services","Computer Vision & OCR","Natural Language Processing","Azure Machine Learning","Bot Framework","Speech Services","AI-102 Exam Prep"], uses:["AI application development","Chatbot development","Image recognition","Language processing"], jobs:["AI Engineer","Azure Developer","ML Engineer","Cognitive Services Developer"] },
+  { id:"powerbi", title:"Power BI Data Analytics (PL-300)", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_MICROSOFT POWER BI_PL-300.pdf", desc:"Learn to transform data into interactive dashboards and business insights using Microsoft Power BI.", detail:"Industry-focused Power BI training covering data import, transformation, modeling, and visualization.", topics:["Power BI Interface & Data Import","Data Cleaning with Power Query","Data Modeling & Relationships","DAX Formulas & Calculations","Interactive Dashboards","Charts, KPIs & Visualizations","Publishing & Sharing Reports"], uses:["Business intelligence reporting","Sales & marketing analytics","Financial dashboards","Data-driven decisions"], jobs:["Power BI Developer","Data Analyst","Business Intelligence Analyst","Reporting Analyst"] },
+  { id:"ms-office", title:"MS Office Professional", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_MS OFFICE.pdf", desc:"Master Microsoft Word, Excel and PowerPoint for professional documentation, data analysis and presentations.", detail:"Complete Microsoft Office training covering document creation in Word, advanced data analysis in Excel, presentations in PowerPoint, and Outlook email management.", topics:["MS Word Document Formatting","Excel Formulas & Functions","Excel Charts & Pivot Tables","PowerPoint Presentations","Outlook Email Management","Data Analysis in Excel","Office Productivity Tools"], uses:["Office administration","Business reporting","Professional presentations","Data analysis"], jobs:["Office Executive","MIS Executive","Administrative Assistant","Data Entry Operator"] },
+  { id:"advanced-excel", title:"Advanced Excel", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_ADVANCED EXCEL.pdf", desc:"Master advanced Excel functions, macros, VBA programming, pivot tables and data analysis techniques.", detail:"Advanced Excel training covering complex formulas, VLOOKUP/XLOOKUP, pivot tables, Power Query, macros, VBA automation, and data visualization.", topics:["Advanced Formulas & Functions","VLOOKUP, XLOOKUP, INDEX-MATCH","Pivot Tables & Charts","Power Query & Power Pivot","Macros & VBA Basics","Data Validation & Protection","Financial Modeling"], uses:["Financial analysis","Business reporting","Data processing","Automation"], jobs:["Data Analyst","MIS Executive","Financial Analyst","Excel Consultant"] },
+  { id:"tally", title:"Tally Prime with GST", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_TALLY WITH GST.pdf", desc:"Industry-ready accounting training covering GST billing, inventory management and financial reporting using Tally Prime.", detail:"Professional accounting course covering company creation, ledger management, voucher entries, GST configuration, billing, inventory tracking, payroll management, and financial reporting.", topics:["Tally Prime Installation & Setup","Company & Ledger Creation","Voucher Entry & Billing","GST Configuration & Returns","Inventory Management","Payroll Management","Financial Statements"], uses:["Business accounting","GST filing","Inventory tracking","Financial management"], jobs:["Accountant","Accounts Executive","GST Practitioner","Tally Operator"] },
+  { id:"tally-essential", title:"Tally Essentials", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_TALLY ESSENTIAL_LEVEL_02.pdf", desc:"Beginner-friendly Tally training covering basic accounting, voucher entries and fundamental business transactions.", detail:"Foundation Tally course designed for beginners covering basic accounting concepts, company setup, ledger creation, voucher entries, and basic financial reports.", topics:["Accounting Fundamentals","Tally Interface & Setup","Company Creation","Ledger Management","Basic Voucher Entry","Day Book & Reports","Basic GST Entry"], uses:["Small business accounting","Shop management","Basic bookkeeping","Entry level accounting"], jobs:["Accounts Assistant","Data Entry Operator","Billing Executive","Junior Accountant"] },
+  { id:"c-programming", title:"C Programming", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_C PROGRAMMING.pdf", desc:"Learn C programming from fundamentals including data types, pointers, memory management and file handling.", detail:"Foundation programming course covering C language fundamentals, control structures, arrays, pointers, structures, file handling, and memory management.", topics:["C Fundamentals & Syntax","Data Types & Variables","Control Structures","Arrays & Strings","Pointers & Memory","Structures & Unions","File Handling"], uses:["System programming","Embedded systems","Algorithm development","Engineering projects"], jobs:["C Developer","Embedded Developer","System Programmer","Software Engineer"] },
+  { id:"java", title:"Java Programming", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_JAVA.pdf", desc:"Master Core Java including OOP concepts, collections, exception handling and multithreading.", detail:"Comprehensive Java programming course covering OOP principles, classes, inheritance, polymorphism, collections framework, exception handling, multithreading, and JDBC database connectivity.", topics:["Java Fundamentals & OOP","Classes & Objects","Inheritance & Polymorphism","Collections Framework","Exception Handling","Multithreading","JDBC & Database"], uses:["Application development","Android base","Enterprise software","Web backend"], jobs:["Java Developer","Backend Developer","Software Engineer","Application Developer"] },
+  { id:"python", title:"Python Programming", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_PYTHON.pdf", desc:"Learn Python programming for software development, automation, data analysis and web development.", detail:"Complete Python programming course covering fundamentals, OOP, file handling, libraries, web scraping, automation, and introduction to data analysis.", topics:["Python Fundamentals","OOP in Python","File Handling & Modules","NumPy & Pandas Basics","Web Scraping","Automation Scripts","Database Connectivity"], uses:["Automation","Data analysis","Web development","Scripting"], jobs:["Python Developer","Data Analyst","Automation Engineer","Backend Developer"] },
+  { id:"networking", title:"Hardware & Networking", duration:"4 Months", syllabus:"PDF/I TECH_SYLLABUS_HARDWARE & NETWORKING.pdf", desc:"CCNA, CCNP, routing & switching, network troubleshooting with real networking labs.", detail:"Industry-focused networking course covering PC hardware, Cisco routing and switching, IP addressing, VLAN configuration, network troubleshooting, and enterprise network design.", topics:["PC Hardware & Assembly","Networking Fundamentals","IP Addressing & Subnetting","Cisco Router & Switch Config","Routing Protocols","VLANs & Trunking","Network Troubleshooting"], uses:["Enterprise network setup","Data center networking","Hardware support","IT infrastructure"], jobs:["Network Engineer","Hardware Technician","System Administrator","IT Support Engineer"] },
+  { id:"cybersecurity", title:"Cybersecurity & Ethical Hacking", duration:"4 Months", syllabus:"PDF/I TECH_SYLLABUS_PCT.pdf", desc:"Ethical Hacking, Security+, CEH, SOC operations and hands-on penetration testing labs.", detail:"Comprehensive cybersecurity training covering ethical hacking methodology, vulnerability assessment, penetration testing, SOC operations, and defensive security practices.", topics:["Ethical Hacking Methodology","Footprinting & Reconnaissance","Scanning & Enumeration","Exploitation Techniques","Malware Analysis","SOC Operations","Incident Response"], uses:["Security auditing","Network protection","Threat detection","Cyber defense"], jobs:["Cybersecurity Analyst","Ethical Hacker","SOC Analyst","Security Consultant"] },
+  { id:"rhcsa", title:"Red Hat Linux (RHCSA)", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_RHCSA.pdf", desc:"Red Hat Certified System Administrator training covering Linux administration, shell scripting and server management.", detail:"Official RHCSA preparation course covering Linux installation, user management, file systems, networking, SELinux, systemd services, storage management, and shell scripting.", topics:["Linux Installation & Basics","User & Group Management","File System & Permissions","Networking Configuration","SELinux & Security","Storage & LVM","Shell Scripting"], uses:["Server administration","Cloud infrastructure","Linux environments","Enterprise IT"], jobs:["Linux Administrator","System Administrator","DevOps Engineer","Cloud Engineer"] },
+  { id:"autocad", title:"AutoCAD Design", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_AUTOCAD.pdf", desc:"Learn professional 2D drafting and basic 3D design using AutoCAD for engineering and architectural projects.", detail:"Practical AutoCAD training focused on technical drawing and design. Students learn precise architectural and mechanical drawings, floor plans, layouts, and basic 3D models.", topics:["AutoCAD Interface & Tools","2D Drafting & Dimensioning","Layers & Object Properties","Architectural Floor Plans","Blocks & Annotations","Basic 3D Modeling","Plotting & Printing"], uses:["Architectural drawing","Civil engineering","Mechanical drafting","Construction planning"], jobs:["AutoCAD Designer","Civil Draftsman","Architectural Draftsman","CAD Technician"] },
+  { id:"revit", title:"Revit Architecture", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_REVIT ARCHITECTURE.pdf", desc:"Master Building Information Modeling (BIM) using Autodesk Revit for modern architectural and construction design.", detail:"Industry-focused Revit course teaching BIM concepts. Students create intelligent 3D building models, architectural plans, sections, elevations, and construction documentation.", topics:["Revit Interface & BIM Basics","Building Modeling","Walls, Floors & Roof Design","Doors, Windows & Components","Sections & Elevations","Rendering & Visualization","Project Documentation"], uses:["Architectural design","Building modeling","Construction planning","Interior visualization"], jobs:["Revit Designer","BIM Engineer","Architectural Designer","BIM Modeler"] },
+  { id:"solidworks", title:"SolidWorks 3D Design", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_SOLIDWORKS.pdf", desc:"Learn professional 3D mechanical design and product modeling using SolidWorks CAD software.", detail:"Mechanical design course covering SolidWorks part modeling, assembly design, drawing creation, sheet metal design, and simulation.", topics:["SolidWorks Interface","Part Modeling","Assembly Design","Engineering Drawings","Sheet Metal Design","Surface Modeling","Simulation Basics"], uses:["Product design","Mechanical engineering","Manufacturing","Prototyping"], jobs:["SolidWorks Designer","Mechanical Engineer","Product Designer","CAD Engineer"] },
+  { id:"3dsmax", title:"3DS Max with V-Ray", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_3DS_MAX WITH VRAY.pdf", desc:"Master 3D modeling, rendering and visualization using 3DS Max and V-Ray for architecture and product design.", detail:"Professional 3D visualization course covering 3DS Max modeling, texturing, lighting, V-Ray rendering, and animation.", topics:["3DS Max Interface","3D Modeling Techniques","Materials & Texturing","Lighting Setup","V-Ray Rendering","Camera & Animation","Architectural Visualization"], uses:["Architectural visualization","Interior design renders","Product visualization","Animation"], jobs:["3D Visualizer","Architectural Renderer","3D Artist","CGI Artist"] },
+  { id:"catia", title:"CATIA Design", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_CATIA.pdf", desc:"Learn CATIA V5 for advanced 3D mechanical design, surface modeling and aerospace/automotive engineering.", detail:"Advanced CAD course covering CATIA V5 part design, assembly, drafting, surface modeling, and sheet metal.", topics:["CATIA Interface & Basics","Part Design","Assembly Design","Drafting & Documentation","Surface Modeling","Sheet Metal Design","DMU Kinematics"], uses:["Aerospace design","Automotive engineering","Industrial design","Product development"], jobs:["CATIA Designer","Mechanical Designer","Aerospace Engineer","Product Engineer"] },
+  { id:"creo", title:"Creo Parametric", duration:"3 Months", syllabus:"PDF/I TECH_SYLLABUS_CREO.pdf", desc:"Master PTC Creo for parametric 3D modeling, assembly design and engineering documentation.", detail:"Professional Creo training covering parametric modeling, assembly design, detailed drawings, surface modeling, and manufacturing preparation.", topics:["Creo Interface & Sketcher","Part Modeling","Assembly & Constraints","Engineering Drawings","Surface Design","Sheet Metal","Manufacturing Setup"], uses:["Product design","Mechanical engineering","Manufacturing","Tool design"], jobs:["Creo Designer","Mechanical Engineer","Product Designer","CAD Engineer"] },
+  { id:"primavera", title:"Primavera P6", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_PRIMAVERA.pdf", desc:"Learn Oracle Primavera P6 for professional project planning, scheduling and management.", detail:"Project management course covering Primavera P6 for project scheduling, resource allocation, baseline management, progress tracking, and reporting.", topics:["Primavera Interface","Project Creation & WBS","Activity Definition","Resource Assignment","Scheduling & Baselines","Progress Tracking","Reports & Dashboards"], uses:["Construction project management","Engineering project planning","Resource management","Project tracking"], jobs:["Project Planner","Project Manager","Planning Engineer","Scheduling Analyst"] },
+  { id:"staad-pro", title:"STAAD Pro Structural Design", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_STAAD PRO.pdf", desc:"Learn STAAD Pro for structural analysis and design of buildings, bridges and industrial structures.", detail:"Structural engineering course covering STAAD Pro for 3D structural modeling, load analysis, steel and concrete design, and generating structural reports.", topics:["STAAD Interface & Modeling","Node & Beam Modeling","Load Cases & Combinations","Structural Analysis","Steel Design","Concrete Design","Report Generation"], uses:["Building structural design","Bridge analysis","Industrial structures","Structural consulting"], jobs:["Structural Engineer","Civil Designer","STAAD Analyst","Structural Consultant"] },
+  { id:"photoshop", title:"Adobe Photoshop", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_PHOTOSHOP.pdf", desc:"Learn professional photo editing, graphic design, and digital art creation using Adobe Photoshop.", detail:"Creative design course covering image editing, photo retouching, poster design, social media creatives, web graphics, and visual effects.", topics:["Photoshop Interface & Tools","Photo Retouching","Layers & Masking","Color Correction","Poster & Banner Design","Social Media Graphics","Digital Painting & Effects"], uses:["Graphic design","Advertising creatives","Photo editing","Social media marketing"], jobs:["Graphic Designer","Photo Editor","Digital Artist","Creative Designer"] },
+  { id:"coreldraw", title:"CorelDRAW Graphic Design", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_CORELDRAW.pdf", desc:"Master vector graphic design, logo creation, and print media design using CorelDRAW.", detail:"Professional CorelDRAW training covering vector design, logo creation, brochure design, business card layouts, typography, and print-ready artwork.", topics:["CorelDRAW Interface","Vector Drawing Tools","Logo & Brand Design","Typography & Text Effects","Brochure & Flyer Design","Color Management","Print-Ready Output"], uses:["Logo design","Print media","Branding","Advertising materials"], jobs:["Graphic Designer","Logo Designer","Print Designer","Brand Designer"] },
+  { id:"spoken-english", title:"Spoken English & Communication", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_SPOKEN ENGLISH.pdf", desc:"Improve your English speaking, pronunciation, grammar and professional communication skills.", detail:"Communication skills course covering spoken English, pronunciation, grammar, vocabulary building, interview skills, group discussion, and professional business communication.", topics:["Basic Grammar & Vocabulary","Pronunciation & Accent","Conversation Practice","Business Communication","Email & Letter Writing","Interview Preparation","Group Discussion Skills"], uses:["Professional communication","Job interviews","Business meetings","Customer interaction"], jobs:["Customer Support","Sales Executive","HR Executive","Corporate Professional"] },
+  { id:"oracle-cloud", title:"Oracle Cloud", duration:"3 Months", syllabus:"PDF/I TECH_ORACLE CLOUD_5DAYS.pdf", desc:"Learn Oracle Cloud Infrastructure services, architecture and Oracle Cloud certification preparation.", detail:"Oracle Cloud training covering OCI core services, compute, storage, networking, database, identity management, and cloud architecture design.", topics:["Oracle Cloud Fundamentals","OCI Compute & Storage","Networking & VCN","Oracle Database Cloud","Identity & Access Management","Security & Compliance","OCI Certification Prep"], uses:["Cloud migration","Database hosting","Enterprise cloud","Oracle workloads"], jobs:["Oracle Cloud Engineer","Cloud Administrator","Database Cloud Admin","Solutions Architect"] },
+  { id:"pct-non-teaching", title:"PCT for Non-Teaching Staff", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_PCT_FOR NON TEACHING STAFF.pdf", desc:"Computer fundamentals and office tools training designed specifically for non-teaching school and college staff.", detail:"Practical computer course for administrative and support staff covering basic computer operations, MS Office, email, internet usage, and digital tools.", topics:["Computer Fundamentals","MS Word & Excel Basics","Email & Internet Usage","Data Entry Skills","PowerPoint Basics","Online Forms & Portals","Digital Literacy"], uses:["Office administration","School management","Data entry","Digital communication"], jobs:["Office Staff","Administrative Assistant","Data Entry Operator","Support Staff"] },
+  { id:"pct-teaching", title:"PCT for Teaching Staff", duration:"2 Months", syllabus:"PDF/I TECH_SYLLABUS_PCT_FOR TEACHING STAFF.pdf", desc:"Digital skills training for teachers covering online teaching tools, presentations and educational technology.", detail:"Technology training for educators covering MS Office, PowerPoint presentations, Google Classroom, Zoom, digital content creation, and online teaching methodologies.", topics:["Computer & Internet Basics","MS Office for Teachers","PowerPoint Presentations","Google Classroom","Zoom & Online Teaching","Digital Content Creation","Educational Apps & Tools"], uses:["Online teaching","Digital classrooms","Content creation","School administration"], jobs:["Computer Teacher","Digital Educator","E-Learning Creator","Academic Staff"] },
+  { id:"cloud-training", title:"Cloud Training Topics", duration:"3 Months", syllabus:"PDF/Cloud_Training_Topics.docx", desc:"Comprehensive cloud computing training covering multiple cloud platforms and cloud architecture concepts.", detail:"Multi-cloud training covering foundational to advanced cloud concepts across AWS, Azure, and Google Cloud platforms.", topics:["Cloud Fundamentals","AWS Core Services","Microsoft Azure","Google Cloud Platform","Cloud Architecture","Migration Strategies","Cloud Security"], uses:["Cloud migration","Multi-cloud management","Cloud consulting","IT modernization"], jobs:["Cloud Engineer","Cloud Consultant","Solutions Architect","Cloud Administrator"] }
+];
+
+const exams = [
+  { name:"About Our Testing Center", desc:"iTech Academy is an authorized and fully-equipped testing centre delivering global certification exams with international security standards.", body:"Comfortable & Secure Environment", schedule:"Available Year Round" },
+  { name:"Facilities & Security", desc:"Secure monitored workstations, privacy screens, 24/7 CCTV surveillance, high-speed redundant internet, biometric ID verification.", body:"Secure Infrastructure", schedule:"On-site Support" },
+  { name:"Booking & Policies", desc:"Book through Pearson VUE, Webassessor or Certiport portals. Arrive 30 minutes early with valid photo ID.", body:"Vendor Portal Booking", schedule:"Flexible Scheduling" },
+  { name:"Pearson VUE Exams", desc:"Major IT certifications including Cisco, VMware, Red Hat, Microsoft Azure, AWS, Oracle, MongoDB and ISTQB testing.", body:"Cisco • Microsoft • AWS • Oracle", schedule:"Multiple Dates" },
+  { name:"Kryterion / Webassessor", desc:"Vendor-managed exams including Google Cloud certifications, Adobe certifications, Salesforce technical exams.", body:"Google Cloud • Adobe • Salesforce", schedule:"Remote / Centre" },
+  { name:"Certiport Exams", desc:"Academic certifications including Microsoft Office Specialist, Adobe Certified Professional, Autodesk certifications and IC3.", body:"MOS • Adobe • Autodesk", schedule:"Student Friendly" },
+  { name:"How to Book Your Exam", desc:"Choose your exam on the vendor website, select iTech Academy as your test centre, bring valid photo ID and arrive 25–30 minutes early.", body:"Simple Booking Steps", schedule:"Quick Registration" },
+  { name:"Contact & Booking Assistance", desc:"Phone: +91 97881 25125 | Email: exams[at]itechacademy.in | Address: #28, 2nd Floor Nisa Complex, Tiruchedur Road, Palai, Tirunelveli.", body:"Help Available", schedule:"Support Team" }
+];
+
+const students = [
+  { name:"Gomathi Nayagam", company:"Inspirisys Solution Ltd", role:"Linux Server Admin", course:"Linux / RHCSA", quote:"iTech Academy completely transformed my career. The practical training, real-time projects, and guidance from experienced trainers gave me the confidence to attend interviews and secure my position as a Linux Server Administrator." },
+  { name:"Manimohan K", company:"Skylark IT", role:"Network Solution Expert", course:"Networking / CCNA", quote:"The trainers at iTech Academy are incredibly supportive and knowledgeable. I started with almost no networking background, but the structured training and hands-on lab sessions helped me build strong fundamentals." },
+  { name:"Edison Samuel", company:"Lineage Power Limited", role:"Network Support Engineer", course:"CCNA", quote:"The real-world networking labs and project-based learning at iTech Academy made a huge difference. The training is practical and industry-focused, which helped me build confidence and technical skills." },
+  { name:"Priya Dharshini", company:"CodeCraft Technologies", role:"Junior Software Developer", course:"Full Stack Web Development", quote:"I joined iTech Academy with zero coding background. After 6 months of full stack training, I landed my dream job. The mentors here truly care about every student's growth." },
+  { name:"Karthik Selvam", company:"Softlogic Systems", role:"Cloud Support Engineer", course:"AWS Cloud", quote:"The AWS training at iTech Academy was extremely practical. The lab environment and exam preparation were top-notch. I cleared AWS Cloud Practitioner on my first attempt!" },
+  { name:"Anitha Lakshmi", company:"DataVision Analytics", role:"Data Analyst", course:"Power BI / PL-300", quote:"Power BI training at iTech was exceptional. I now work as a Data Analyst and build dashboards for enterprise clients. The PL-300 preparation was thorough and well-structured." },
+  { name:"Deepika Sundaram", company:"Insight Analytics", role:"Business Intelligence Analyst", course:"Advanced Excel", quote:"The Advanced Excel course transformed how I work with data. My new role requires extensive data modeling — and iTech's training prepared me perfectly for it." },
+  { name:"Joshua", company:"NetAxis Networks", role:"Network Engineer", course:"CCNA", quote:"CCNA training at iTech was comprehensive with real Cisco equipment for lab sessions. I cleared CCNA on my first try and gained strong confidence in networking concepts." },
+  { name:"Vijayalakshmi R", company:"CloudNova Tech", role:"Azure Cloud Developer", course:"Microsoft Azure (AZ-104)", quote:"AZ-104 preparation at iTech was outstanding. The mock exams and lab sessions were exactly aligned with the real exam. I passed on my first attempt." },
+  { name:"Murugesan P", company:"Zoho", role:"Software Engineer", course:"Python Programming", quote:"Python training at iTech was practical and project-oriented. I built 3 real applications during the course which helped me clear technical interviews with confidence." },
+  { name:"Saranya Priya", company:"DBTech Solutions", role:"Database Administrator", course:"Oracle DB / OCP", quote:"Oracle certification training at iTech Academy was exactly what I needed. The instructor explained complex database concepts clearly." },
+  { name:"Sarvanesh", company:"CodeWave Systems", role:"Java Developer", course:"Java Full Stack", quote:"Java Full Stack course at iTech covered everything from Core Java to Spring Boot and modern web technologies. I joined my first developer role just two months after completing the program." },
+  { name:"Nivetha Mohan", company:"ITServe Systems", role:"IT Support Analyst", course:"CompTIA A+", quote:"CompTIA A+ training at iTech gave me the technical foundation I needed. I can now handle hardware and software troubleshooting confidently in real environments." },
+  { name:"Pandian K", company:"DesignTech Studio", role:"AutoCAD Designer", course:"AutoCAD Design", quote:"AutoCAD course at iTech was excellent. The hands-on drafting sessions and real project practice helped me land my first professional design role." },
+  { name:"Jothika Ravi", company:"SecureLayer Systems", role:"Security Operations Analyst", course:"CompTIA Security+", quote:"Security+ preparation at iTech was very organized. The course covered all exam objectives with practical demonstrations and real security scenarios." },
+  { name:"Sathish Chandran", company:"DevStack Solutions", role:"DevOps Engineer", course:"DevOps Engineering", quote:"DevOps training at iTech was hands-on from day one. Docker, Kubernetes and Jenkins were practiced through real deployment projects." },
+  { name:"Rekha Devi", company:"FinanceSoft Solutions", role:"Tally & Accounts Executive", course:"Tally Prime with GST", quote:"Tally Prime course at iTech was practical and industry-ready. I learned GST filing, payroll and inventory management clearly." },
+  { name:"Arun Prakash", company:"VizArch Studios", role:"3D Visualization Artist", course:"3DS Max with V-Ray", quote:"3DS Max and V-Ray training at iTech was extremely practical. The architectural visualization techniques helped me build a strong portfolio." },
+  { name:"Kavitha Selvi", company:"CADWorks Engineering", role:"CAD Design Engineer", course:"CATIA Design", quote:"CATIA training at iTech was highly professional. The instructors guided us through complex surface modeling and product design techniques." },
+  { name:"Manikandan R", company:"MechDesign Labs", role:"SolidWorks Engineer", course:"SolidWorks 3D Design", quote:"SolidWorks course at iTech covered everything needed for mechanical design roles. The project-based approach gave me a strong portfolio." },
+  { name:"Suganthi Devi", company:"Insight Analytics", role:"MIS Executive", course:"MS Office Professional", quote:"MS Office course at iTech transformed my productivity. I now manage complex reports and dashboards efficiently." },
+  { name:"Venkataraman S", company:"WebCore Technologies", role:"Angular Developer", course:"Angular JS Development", quote:"Angular JS training at iTech was comprehensive and project-focused. Building enterprise-level applications during the course helped me start my developer career." },
+  { name:"Ezhilarasi M", company:"Frontend Labs", role:"React Developer", course:"React JS Development", quote:"React training at iTech covered hooks, Redux and real API integration. The trainer was always available to clear doubts." },
+  { name:"Senthilkumar G", company:"StructBuild Engineers", role:"STAAD Pro Engineer", course:"STAAD Pro Structural Design", quote:"STAAD Pro training at iTech was exactly what civil engineers need. Structural analysis sessions with real project data were very helpful." },
+  { name:"Nandhini V", company:"Creative Pixel Studio", role:"Graphic Designer", course:"Adobe Photoshop / CorelDRAW", quote:"Creative design training at iTech was inspiring. Photoshop and CorelDRAW sessions were hands-on with real projects." },
+  { name:"Periyasamy K", company:"InfraPlan Consultants", role:"Primavera Project Planner", course:"Primavera P6", quote:"Primavera P6 training at iTech was incredibly detailed. Resource allocation and project planning were taught with real scenarios." },
+  { name:"Divya Bharathi", company:"DataBridge Analytics", role:"Python Data Analyst", course:"Python Programming", quote:"Python and data analysis at iTech was a game changer for me. Pandas, numpy and automation helped me transition into data analytics." },
+  { name:"Ranjith Kumar T", company:"TechServe Hardware", role:"Hardware Support Engineer", course:"Hardware & Networking", quote:"Hardware and networking training at iTech was extremely practical. We worked on real equipment every day." },
+  { name:"Lalitha Priya", company:"FinanceEdge Services", role:"GST Practitioner", course:"Tally Prime with GST", quote:"Tally with GST at iTech was fantastic. The trainer covered every GST return type with real filing examples." },
+  { name:"Anand Murugesan", company:"BuildTech Infrastructure", role:"Revit BIM Engineer", course:"Revit Architecture", quote:"Revit Architecture training at iTech was very project-driven. I created complete BIM models from scratch." },
+  { name:"Thilagavathi R", company:"OfficeTech Solutions", role:"Office Systems Coordinator", course:"MS Office / MO-200", quote:"MS Office Specialist certification from iTech added tremendous value to my professional profile." },
+  { name:"Hariharan S", company:"Freshworks", role:"Full Stack Engineer", course:"Full Stack Web Development", quote:"Full Stack training at iTech was industry-level. React frontend, backend development and deployment were practiced through real projects." },
+  { name:"Meena Krishnan", company:"GeoFin Analytics", role:"Financial Data Analyst", course:"Power BI PL-300", quote:"Power BI training at iTech was superb. DAX formulas, data modeling and dashboard publishing were covered in depth." },
+  { name:"Vigneshwaran P", company:"LinuxTech Systems", role:"Linux System Administrator", course:"RHCSA / Red Hat Linux", quote:"RHCSA training at iTech prepared me for every exam objective. LVM, SELinux and system administration were practiced on live servers." },
+  { name:"Vasantha Kumari", company:"SkillEdge Training", role:"Spoken English Trainer", course:"Spoken English & Communication", quote:"Spoken English course at iTech gave me the fluency and confidence I needed for professional communication." },
+  { name:"Murugan Pillai", company:"AutoDesign Labs", role:"CREO Design Engineer", course:"Creo Parametric", quote:"Creo Parametric training at iTech was very advanced. The parametric modeling and assembly techniques were taught clearly." },
+  { name:"Sujatha Devi", company:"SupportPlus Services", role:"Customer Support Lead", course:"MS Office / Communication", quote:"MS Office and communication training at iTech gave me a complete professional edge." },
+  { name:"Balamurugan A", company:"DBTech Solutions", role:"Oracle DBA", course:"Oracle DB Administration", quote:"Oracle database training at iTech was rigorous and highly practical. Backup, recovery and performance tuning were taught with real environments." },
+  { name:"Poornima Devi", company:"DesignWeb Studio", role:"Graphic & Web Designer", course:"Photoshop / HTML & CSS", quote:"Design and web development at iTech were taught together brilliantly. I can now design and code complete websites." },
+  { name:"Ramesh Babu", company:"Wipro Technologies", role:"Cybersecurity Analyst", course:"CEH / Cybersecurity", quote:"CEH training at iTech Academy gave me in-depth practical knowledge. The ethical hacking labs and real case studies made the learning truly impactful." },
+  { name:"Suresh Kumar", company:"Tech Mahindra", role:"Senior Network Engineer", course:"CCNP", quote:"CCNP training at iTech was comprehensive with real Cisco equipment for lab sessions. I cleared CCNP on my first try and got placed at Tech Mahindra." }
+];
+
+// ================================================================
+//  INIT
+// ================================================================
+document.getElementById('year').textContent = new Date().getFullYear();
+updateNavStyle('home');
+
+// Build course grid
+const cgrid = document.getElementById('courseGrid');
+courses.forEach(c => {
+  const div = document.createElement('div');
+  div.className = 'course-card';
+  div.innerHTML = `<div class="top-bar"></div><div class="cc-body">
+    <div class="course-tag">⏱ ${c.duration}</div>
+    <h3 style="font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:600;margin-bottom:6px;">${c.title}</h3>
+    <p style="font-size:0.82rem;color:var(--muted);margin-bottom:14px;line-height:1.6;">${c.desc}</p>
+    <a style="font-size:0.82rem;font-weight:600;color:var(--secondary);cursor:pointer;" onclick="showCourseDetail('${c.id}')">View Details →</a>
+  </div>`;
+  cgrid.appendChild(div);
+});
+document.getElementById('courseCount').textContent = courses.length + '+ industry-aligned courses from basic computer skills to cutting-edge technologies. Choose your path to a successful career.';
+
+// Build exam grid
+const egrid = document.getElementById('examGrid');
+exams.forEach(e => {
+  const div = document.createElement('div');
+  div.className = 'exam-card';
+  div.innerHTML = `<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;"><span style="color:var(--secondary);">📄</span><strong style="font-family:'Rajdhani',sans-serif;font-size:0.95rem;">${e.name}</strong></div>
+  <p style="font-size:0.82rem;color:var(--muted);margin-bottom:12px;line-height:1.65;">${e.desc}</p>
+  <div style="display:flex;gap:12px;font-size:0.75rem;color:var(--muted);"><span>🏅 ${e.body}</span><span>📅 ${e.schedule}</span></div>`;
+  egrid.appendChild(div);
+});
+
+// Build success grid
+const sgrid = document.getElementById('successGrid');
+students.forEach(s => {
+  const initials = s.name.split(' ').map(n=>n[0]).join('');
+  const div = document.createElement('div');
+  div.className = 'story-card';
+  div.innerHTML = `<p class="story-quote">"${s.quote}"</p>
+  <div class="story-meta">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <div class="story-avatar">${initials}</div>
+      <div><div style="font-weight:600;font-family:'Rajdhani',sans-serif;">${s.name}</div><div style="font-size:0.78rem;color:var(--muted);">💼 ${s.role}</div></div>
+    </div>
+    <div style="margin-top:8px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+      <span class="badge badge-red">${s.company}</span>
+      <span style="font-size:0.75rem;color:var(--muted);">${s.course}</span>
+    </div>
+  </div>`;
+  sgrid.appendChild(div);
+});
+
+// ================================================================
+//  PANORAMIC SLIDESHOW
+// ================================================================
+let currentSlide = 0;
+const slides = document.querySelectorAll('.panoramic-slide');
+const dotsContainer = document.getElementById('slideDots');
+slides.forEach((_,i) => {
+  const d = document.createElement('button');
+  d.className = 'dot' + (i===0?' active':'');
+  d.onclick = () => goSlide(i);
+  dotsContainer.appendChild(d);
+});
+function goSlide(n) {
+  slides[currentSlide].classList.remove('active');
+  document.querySelectorAll('#slideDots .dot')[currentSlide].classList.remove('active');
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+  document.querySelectorAll('#slideDots .dot')[currentSlide].classList.add('active');
+}
+function slideChange(dir) { goSlide(currentSlide + dir); }
+setInterval(() => goSlide(currentSlide + 1), 4500);
+
+// ================================================================
+//  INTERNSHIP SLIDESHOW
+// ================================================================
+let internCurrent = 0;
+const internSlides = document.querySelectorAll('#internSlideshow .intern-slide');
+const internDotsContainer = document.getElementById('internDots');
+internSlides.forEach((_,i) => {
+  const d = document.createElement('button');
+  d.className = 'dot' + (i===0?' active':'');
+  d.onclick = () => goInternSlide(i);
+  internDotsContainer.appendChild(d);
+});
+function goInternSlide(n) {
+  internSlides[internCurrent].classList.remove('active');
+  document.querySelectorAll('#internDots .dot')[internCurrent].classList.remove('active');
+  internCurrent = (n + internSlides.length) % internSlides.length;
+  internSlides[internCurrent].classList.add('active');
+  document.querySelectorAll('#internDots .dot')[internCurrent].classList.add('active');
+}
+function internSlideChange(dir) { goInternSlide(internCurrent + dir); }
+setInterval(() => goInternSlide(internCurrent + 1), 3500);
+
+// ================================================================
+//  NAVIGATION
+// ================================================================
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  // Toggle open class
+  menu.classList.toggle('open');
+}
+
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const target = document.getElementById('page-' + name);
+  if (target) target.classList.add('active');
+
+  document.querySelectorAll('[data-page]').forEach(a => {
+    a.classList.toggle('active', a.dataset.page === name);
+  });
+
+  // ✅ Close menu using classList (must match toggleMenu)
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.remove('open');
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  updateNavStyle(name);
+  if (name === 'announcements') loadAnnouncements();
+}
+
+
+function showCourseDetail(id) {
+  const c = courses.find(x => x.id === id);
+  if (!c) return;
+  document.getElementById('detailTitle').textContent = c.title;
+  document.getElementById('detailDuration').textContent = '⏱ ' + c.duration;
+  document.getElementById('detailDesc').textContent = c.desc;
+  document.getElementById('detailDetail').textContent = c.detail;
+  document.getElementById('sidebarDuration').textContent = c.duration;
+  document.getElementById('sidebarTopics').textContent = c.topics.length + ' Modules';
+  currentSyllabusUrl = c.syllabus || '#';
+  const tg = document.getElementById('detailTopics');
+  tg.innerHTML = '';
+  c.topics.forEach((t,i) => { tg.innerHTML += `<div class="topic-chip"><span class="topic-num">${i+1}</span><span style="font-size:0.875rem;font-weight:500;">${t}</span></div>`; });
+  const ug = document.getElementById('detailUses');
+  ug.innerHTML = '';
+  c.uses.forEach(u => { ug.innerHTML += `<div class="use-chip"><span style="color:var(--secondary);">→</span> ${u}</div>`; });
+  const jg = document.getElementById('detailJobs');
+  jg.innerHTML = '';
+  c.jobs.forEach(j => { jg.innerHTML += `<div class="job-chip">${j}</div>`; });
+  showPage('courseDetail');
+}
+
+
+function openSyllabusModal(syllabusUrl, courseTitle) {
+  if (!syllabusUrl || syllabusUrl === '#') { 
+    showToast('ℹ️ Not Available', 'Syllabus PDF not available for this course yet.'); 
+    return; 
+  }
+  pendingSyllabusUrl = syllabusUrl; // ✅ set BEFORE opening modal
+  document.getElementById('syllabusLeadModal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+// ================================================================
+//  ENQUIRE FORM
+// ================================================================
+document.getElementById("enquiryForm").addEventListener("submit", function(event){
+  event.preventDefault();
+  const formData = new FormData();
+  formData.append('name',    document.getElementById('fName').value);
+  formData.append('email',   document.getElementById('fEmail').value);
+  formData.append('phone',   document.getElementById('fPhone').value);
+  formData.append('course',  document.getElementById('fCourse').options[document.getElementById('fCourse').selectedIndex].text);
+  formData.append('message', document.getElementById('fMsg').value);
+  fetch('send_mail.php', { method: 'POST', body: formData })
+  .then(res => res.json())
+  .then(data => {
+    if (data.status === 'success') { showToast('✅ Sent!', 'Your enquiry has been received. We will contact you soon.'); document.getElementById('enquiryForm').reset(); }
+    else { showToast('❌ Failed', 'Could not send. Please try again or call us directly.'); }
+  })
+  .catch(() => { showToast('❌ Error', 'Something went wrong. Please call us directly.'); });
+});
+
+const select = document.getElementById("fCourse");
+courses.forEach(course => {
+  const option = document.createElement("option");
+  option.value = course.id;
+  option.textContent = course.title;
+  select.appendChild(option);
+});
+
+// ================================================================
+//  PAYMENT
+// ================================================================
+function selectPayment(el, label, desc) {
+  document.querySelectorAll('.payment-option').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+  const form = document.getElementById('paymentForm');
+  form.style.display = 'block';
+  document.getElementById('paymentFormTitle').textContent = '💳 ' + label;
+  document.getElementById('payPurpose').value = desc;
+  form.scrollIntoView({behavior:'smooth', block:'start'});
+}
+function submitPayment() {
+  const name    = document.getElementById('payName').value.trim();
+  const phone   = document.getElementById('payPhone').value.trim();
+  const email   = document.getElementById('payEmail').value.trim();
+  const amount  = document.getElementById('payAmount').value.trim();
+  const purpose = document.getElementById('payPurpose').value.trim();
+  const remarks = document.getElementById('payRemarks').value.trim();
+
+  if (!name || !phone || !email || !amount) {
+    showToast('⚠️ Required', 'Please fill Name, Phone, Email and Amount.');
+    return;
+  }
+
+  const fd = new FormData();
+  fd.append('name', name); fd.append('email', email);
+  fd.append('phone', phone); fd.append('purpose', purpose);
+  fd.append('amount', amount); fd.append('remarks', remarks);
+
+  fetch('send_mail2.php', { method: 'POST', body: fd })
+  .then(res => res.json())
+  .then(data => {
+    if (data.status === 'success') {
+      showToast('✅ Details Saved!', 'Redirecting to payment page...');
+      document.getElementById('paymentForm').style.display = 'none';
+      document.querySelectorAll('.payment-option').forEach(o => o.classList.remove('selected'));
+      ['payName','payPhone','payEmail','payAmount','payPurpose','payRemarks'].forEach(id => document.getElementById(id).value = '');
+      // ✅ Redirect to Razorpay
+      setTimeout(() => { window.open('https://razorpay.me/@itechacademy', '_blank'); }, 1500);
+    } else {
+      showToast('❌ Error', data.message || 'Something went wrong.');
+    }
+  })
+  .catch(() => { showToast('❌ Error', 'Something went wrong. Please call us.'); });
+}
+
+function showToast(title, msg) {
+  const t = document.getElementById('toast');
+  document.getElementById('toastTitle').textContent = title;
+  document.getElementById('toastMsg').textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 4000);
+}
+
+// ================================================================
+//  SYLLABUS MODAL
+// ================================================================
+
+function closeSyllabusModal() {
+  document.getElementById('syllabusModal').style.display = 'none';
+  document.body.style.overflow = '';
+  document.getElementById('syllabusIframe').src = '';
+  pendingSyllabusUrl = '';
+}
+function openSyllabusLeadForm() {
+  document.getElementById('syllabusModal').style.display = 'none';
+  pendingSyllabusUrl = currentSyllabusUrl; // ✅ SET THE URL!
+  document.getElementById('syllabusLeadModal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeSyllabusLeadModal() {
+  document.getElementById('syllabusLeadModal').style.display = 'none';
+  document.body.style.overflow = '';
+  document.getElementById('syllabusLeadForm').reset();
+}
+document.getElementById('syllabusLeadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Check PDF url is set
+  if (!pendingSyllabusUrl || pendingSyllabusUrl === '#') {
+    showToast('ℹ️ Not Available', 'Syllabus not available for this course.');
+    return;
+  }
+
+  const name   = document.getElementById('slName').value.trim();
+  const email  = document.getElementById('slEmail').value.trim();
+  const phone  = document.getElementById('slPhone').value.trim();
+  const course = document.getElementById('detailTitle').textContent || 'Unknown';
+
+  if (!name || !email || !phone) {
+    showToast('⚠️ Required', 'Please fill all fields.');
+    return;
+  }
+
+  const fd = new FormData();
+  fd.append('name',    name);
+  fd.append('email',   email);
+  fd.append('phone',   phone);
+  fd.append('course',  course);
+  fd.append('message', 'Syllabus download request for: ' + course);
+
+  // Save URL before it gets cleared
+  const downloadUrl = pendingSyllabusUrl;
+
+  fetch('send_mail1.php', { method: 'POST', body: fd })
+  .then(res => res.json())
+  .then(data => {
+    if (data.status === 'success') {
+      closeSyllabusLeadModal();
+      showToast('✅ Thank you!', 'Downloading syllabus now...');
+
+      // ✅ Download the syllabus
+      setTimeout(() => {
+        const link = document.createElement('a');
+        link.href = downloadUrl;
+        link.setAttribute('download', '');
+        link.setAttribute('target', '_blank');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        pendingSyllabusUrl = '';
+      }, 500); // small delay so modal closes first
+
+    } else {
+      showToast('❌ Error', 'Could not send. Please try again.');
+    }
+  })
+  .catch(() => {
+    showToast('❌ Error', 'Something went wrong. Please try again.');
+  });
+});
+
+// ================================================================
+//  CERT DETAIL MODAL
+// ================================================================
+const certDetails = {
+  cisco:{ icon:'🌐', title:'Cisco Certifications', subtitle:'CCNA · CCNP Enterprise · CyberOps', desc:'Cisco certifications are the gold standard in networking. iTech Academy provides structured training, real lab access, and exam preparation to help you pass CCNA and CCNP exams on your first attempt.', modules:['Networking Fundamentals & OSI Model','IP Addressing & Subnetting (IPv4/IPv6)','Routing Protocols: OSPF, EIGRP, BGP','Switching: VLANs, STP, EtherChannel','WAN Technologies & SD-WAN','Network Security Fundamentals','Cisco IOS CLI Configuration Labs'], exams:['CCNA 200-301','CCNP ENCOR 350-401','CCNP ENARSI 300-410','CyberOps Associate 200-201'], duration:'3 – 5 Months', jobs:['Network Engineer','Network Administrator','Cisco Support Engineer','Infrastructure Architect'] },
+  microsoft:{ icon:'☁️', title:'Microsoft Certifications', subtitle:'Azure · MCSA · Microsoft 365', desc:'Master Microsoft cloud and enterprise platforms. Our training covers Azure administration, Microsoft 365, and hybrid infrastructure with hands-on labs.', modules:['Azure Portal & Resource Management','Virtual Machines & Storage','Azure Networking & Security','Microsoft 365 Administration','Active Directory & Entra ID','Azure Monitor & Cost Management','PowerShell & Azure CLI Automation'], exams:['AZ-900 Azure Fundamentals','AZ-104 Azure Administrator','MS-900 Microsoft 365 Fundamentals','AZ-305 Azure Solutions Architect'], duration:'2 – 4 Months', jobs:['Cloud Administrator','Azure Engineer','Systems Administrator','Microsoft 365 Administrator'] },
+  oracle:{ icon:'🗄️', title:'Oracle Certifications', subtitle:'OCA · OCP · Oracle SQL · Database Administration', desc:'Oracle certifications validate your database expertise for enterprise environments.', modules:['Oracle SQL Fundamentals','PL/SQL Programming','Database Architecture & Storage','User & Security Management','Backup & Recovery (RMAN)','Performance Tuning','Oracle Data Guard & RAC Basics'], exams:['Oracle Database SQL (1Z0-071)','Oracle DB Admin I (1Z0-082)','Oracle DB Admin II (1Z0-083)','Oracle PL/SQL Developer (1Z0-149)'], duration:'3 – 4 Months', jobs:['Database Administrator','Oracle DBA','SQL Developer','Data Engineer'] },
+  ec_council:{ icon:'🔐', title:'EC-Council Certifications', subtitle:'CEH · CHFI · CPENT', desc:'EC-Council certifications are globally recognized in cybersecurity. Our hands-on training covers ethical hacking, penetration testing, and digital forensics.', modules:['Ethical Hacking Phases & Methodology','Footprinting & Reconnaissance','Scanning & Enumeration','Exploitation & Post-Exploitation','Malware Analysis Basics','Digital Forensics Investigation','Incident Response Procedures'], exams:['CEH v12 – Certified Ethical Hacker','CHFI – Computer Hacking Forensic Investigator','CPENT – Certified Penetration Testing Professional','CSA – Certified SOC Analyst'], duration:'4 – 5 Months', jobs:['Ethical Hacker','Penetration Tester','Forensic Analyst','SOC Analyst'] },
+  comptia:{ icon:'🖥️', title:'CompTIA Certifications', subtitle:'A+ · Network+ · Security+ · CySA+', desc:'CompTIA vendor-neutral certifications are recognised worldwide. We prepare you for A+, Network+, and Security+.', modules:['PC Hardware & Troubleshooting','Operating Systems & Virtualization','Networking Concepts & Protocols','Network Security Fundamentals','Threats, Attacks & Vulnerabilities','Identity & Access Management','Security Operations & Compliance'], exams:['CompTIA A+ (Core 1 & Core 2)','CompTIA Network+','CompTIA Security+','CompTIA CySA+'], duration:'2 – 4 Months', jobs:['IT Support Technician','Network Administrator','Security Analyst','Help Desk Engineer'] },
+  adobe:{ icon:'🎨', title:'Adobe & Autodesk Certifications', subtitle:'Adobe ACP · Autodesk Certified User', desc:'Creative professional certifications from Adobe and Autodesk validate your design, animation, and CAD skills.', modules:['Adobe Photoshop – Photo Editing','Adobe Illustrator – Vector Graphics','Adobe Premiere Pro – Video Editing','Adobe After Effects – Motion Graphics','AutoCAD 2D & 3D Drafting','Revit BIM & Architecture','3ds Max & Maya Basics'], exams:['Adobe Certified Professional – Photoshop','Adobe Certified Professional – Illustrator','Autodesk Certified User – AutoCAD','Autodesk Certified User – Revit'], duration:'2 – 3 Months', jobs:['Graphic Designer','Video Editor','CAD Technician','Multimedia Designer'] },
+  tally:{ icon:'💰', title:'Tally Certifications', subtitle:'Tally Prime · Tally ERP 9 · GST Practitioner', desc:'Tally certifications are essential for accounting roles across India.', modules:['Tally Prime Interface & Setup','Company & Ledger Creation','Voucher Entry & Day Book','GST Configuration & Return Filing','Inventory & Stock Management','Payroll & Employee Records','Financial Reports & MIS Statements'], exams:['Tally Certified Professional (TCP)','GST Practitioner Certification','Tally Prime Fundamental Certification'], duration:'2 – 3 Months', jobs:['Accountant','GST Practitioner','Accounts Executive','Tally Operator'] },
+  hp:{ icon:'🛠️', title:'HP & Hardware Certifications', subtitle:'Hardware Support · CompTIA A+ · HP ASE', desc:'Hardware and technical support certifications prepare you for IT service roles.', modules:['PC Components & Assembly','BIOS/UEFI Configuration','Motherboard & Storage Devices','Printers & Peripherals','Hardware Troubleshooting Methods','Laptop & Workstation Repair','HP Enterprise Server Basics'], exams:['CompTIA A+ (Hardware Track)','HP Certified – ASE Technical Support','HP Certified – Digital Imaging Specialist'], duration:'2 – 3 Months', jobs:['Hardware Technician','IT Support Engineer','Field Service Engineer','PC Repair Technician'] },
+  pl300:{ icon:'📊', title:'Microsoft Power BI – PL-300', subtitle:'Power BI Data Analyst Associate', desc:'The PL-300 validates your ability to model data, create visualizations, and deliver business insights using Power BI.', modules:['Data Connection & Import in Power BI','Power Query – Data Cleaning & Transformation','Data Modeling & Table Relationships','DAX Formulas: Calculated Columns & Measures','Building Interactive Reports & Dashboards','Row-Level Security & Workspace Management','Publishing & Sharing Reports on Power BI Service'], exams:['PL-300: Microsoft Power BI Data Analyst'], duration:'2 – 3 Months', jobs:['Power BI Developer','Data Analyst','Business Intelligence Analyst','Reporting Analyst','BI Consultant'] },
+  mo200:{ icon:'📝', title:'Microsoft Office Specialist – MO-200 Excel', subtitle:'MOS Excel 2019 / Microsoft 365', desc:'MO-200 proves your proficiency in Microsoft Excel — from workbooks and formulas to advanced data analysis.', modules:['Excel Interface, Workbooks & Navigation','Formatting Cells, Rows & Columns','Formulas, Functions: SUM, VLOOKUP, IF','Charts – Column, Line, Pie, Bar & Sparklines','Data Sorting, Filtering & Conditional Formatting','PivotTables & PivotCharts Basics','Page Setup, Print Areas & Document Properties'], exams:['MO-200: Microsoft Excel (Excel and Excel 2019)','MO-201: Microsoft Excel Expert (optional)'], duration:'1 – 2 Months', jobs:['Office Executive','MIS Analyst','Data Entry Specialist','Administrative Coordinator','Accounts Assistant'] }
+};
+
+function openCertDetail(key) {
+  const d = certDetails[key]; if (!d) return;
+  document.getElementById('certModalIcon').textContent = d.icon;
+  document.getElementById('certModalTitle').textContent = d.title;
+  document.getElementById('certModalSubtitle').textContent = d.subtitle;
+  document.getElementById('certModalDesc').textContent = d.desc;
+  document.getElementById('certModalDuration').textContent = d.duration;
+  document.getElementById('certModalModules').innerHTML = d.modules.map((m,i)=>`<div style="display:flex;align-items:center;gap:10px;padding:9px 12px;background:var(--bg);border-radius:8px;"><span style="width:24px;height:24px;background:var(--secondary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;flex-shrink:0;">${i+1}</span><span style="font-size:0.875rem;">${m}</span></div>`).join('');
+  document.getElementById('certModalExams').innerHTML = d.exams.map(e=>`<div style="padding:8px 14px;background:var(--secondary-light);color:var(--secondary);border-radius:8px;font-size:0.82rem;font-weight:600;">🏅 ${e}</div>`).join('');
+  document.getElementById('certModalJobs').innerHTML = d.jobs.map(j=>`<div style="padding:9px 14px;background:var(--bg);border-left:3px solid var(--secondary);border-radius:0 8px 8px 0;font-size:0.875rem;font-weight:600;">💼 ${j}</div>`).join('');
+  document.getElementById('certDetailModal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeCertDetailModal() {
+  document.getElementById('certDetailModal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+// ================================================================
+//  ANNOUNCEMENTS
+// ================================================================
+let annLoaded = false;
+function loadAnnouncements() {
+  if (annLoaded) return;
+  const container = document.getElementById('announcementsContainer');
+  fetch('get_announcements.php')
+  .then(res => res.json())
+  .then(data => {
+    annLoaded = true;
+    if (!data || data.length === 0) {
+      container.innerHTML = '<div class="ann-loading"><div style="font-size:2rem;margin-bottom:12px;">📭</div><p style="color:var(--muted);">No announcements yet. Check back soon!</p></div>';
+      return;
+    }
+    container.innerHTML = '';
+    data.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'announcement-card';
+      let imagesHtml = '';
+      if (item.images && item.images.length > 0) {
+        imagesHtml = `<div class="ann-images-grid">${item.images.map(img=>`<img src="uploads/announcements/${img}" alt="Event" onclick="window.open(this.src,'_blank')">`).join('')}</div>`;
+      }
+      let payBtn = item.payment_link ? `<a href="${item.payment_link}" target="_blank" class="ann-pay-btn">💳 Pay / Register Now</a>` : '';
+      card.innerHTML = `
+        <div class="announcement-card-header">
+          <span class="ann-date-badge">📅 ${item.event_date}</span>
+          <h3 class="ann-heading">${item.heading}</h3>
+        </div>
+        <div class="announcement-card-body">
+          <p class="ann-description">${item.description}</p>
+          ${imagesHtml}${payBtn}
+          <div style="margin-top:12px;font-size:0.75rem;color:var(--muted);">Posted on: ${item.posted_date}</div>
+        </div>`;
+      container.appendChild(card);
+    });
+  })
+  .catch(() => {
+    annLoaded = true;
+    container.innerHTML = '<div class="ann-loading"><div style="font-size:2rem;margin-bottom:12px;">⚠️</div><p style="color:var(--muted);">Could not load announcements. Please try again later.</p></div>';
+  });
+}
+
+// ================================================================
+//  EMAIL RENDER
+// ================================================================
+function renderEmails() {
+  const e1='info'+'@'+'itechacademy.in', e2='itechacademy'+'@'+'gmail.com';
+  const el1=document.getElementById('contactEmailDisplay');
+  if(el1) el1.innerHTML=`<a href="mailto:${e1}" style="color:var(--secondary);">${e1}</a> / <a href="mailto:${e2}" style="color:var(--secondary);">${e2}</a>`;
+  const el2=document.getElementById('footerEmailDisplay');
+  if(el2) el2.innerHTML=`<a href="mailto:${e2}" style="color:rgba(255,255,255,0.8);">${e2}</a>`;
+  const el3=document.getElementById('internEmailDisplay');
+  if(el3) el3.innerHTML=`<a href="mailto:${e1}" style="color:var(--secondary);">${e1}</a>`;
+}
+renderEmails();
+
+// ================================================================
+//  OTP FUNCTIONS
+// ================================================================
+const otpVerifiedMap = {}; // tracks which phoneInputId is verified
+
+// Auto-jump between OTP boxes + only allow digits
+document.addEventListener('input', function(e) {
+  if (!e.target.classList.contains('otp-box')) return;
+  e.target.value = e.target.value.replace(/\D/g, '');
+  if (e.target.value.length === 1) {
+    const boxes = [...document.querySelectorAll(`.otp-box[data-form="${e.target.dataset.form}"]`)];
+    const idx = boxes.indexOf(e.target);
+    if (idx < boxes.length - 1) boxes[idx + 1].focus();
+  }
+});
+document.addEventListener('keydown', function(e) {
+  if (!e.target.classList.contains('otp-box')) return;
+  if (e.key === 'Backspace' && !e.target.value) {
+    const boxes = [...document.querySelectorAll(`.otp-box[data-form="${e.target.dataset.form}"]`)];
+    const idx = boxes.indexOf(e.target);
+    if (idx > 0) boxes[idx - 1].focus();
+  }
+});
+
+function sendOtp(phoneInputId, otpSectionId, verifiedId, btnId) {
+  const phone = document.getElementById(phoneInputId).value.trim();
+  if (!phone) { showToast('⚠️ Required', 'Please enter your phone number first.'); return; }
+
+  const btn = document.getElementById(btnId);
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+
+  const fd = new FormData();
+  fd.append('phone', phone);
+
+  fetch('send_otp.php', { method: 'POST', body: fd })
+  .then(res => res.json())
+  .then(data => {
+    if (data.status === 'success') {
+      document.getElementById(otpSectionId).style.display = 'block';
+      showToast('📱 OTP Sent!', 'Enter the 4-digit OTP sent to your mobile.');
+      // Countdown 30s before resend
+      let sec = 30;
+      btn.textContent = `Resend (${sec}s)`;
+      const timer = setInterval(() => {
+        sec--;
+        btn.textContent = sec > 0 ? `Resend (${sec}s)` : 'Resend OTP';
+        if (sec <= 0) { clearInterval(timer); btn.disabled = false; }
+      }, 1000);
+    } else {
+      showToast('❌ Failed', data.message || 'Could not send OTP.');
+      btn.disabled = false;
+      btn.textContent = 'Send OTP';
+    }
+  })
+  .catch(() => {
+    showToast('❌ Error', 'Something went wrong.');
+    btn.disabled = false;
+    btn.textContent = 'Send OTP';
+  });
+}
+
+function verifyOtp(phoneInputId, otpSectionId, verifiedId, formPrefix) {
+  const phone = document.getElementById(phoneInputId).value.trim();
+  const boxes = [...document.querySelectorAll(`.otp-box[data-form="${formPrefix}"]`)];
+  const otp = boxes.map(b => b.value).join('');
+
+  if (otp.length < 4) { showToast('⚠️ Incomplete', 'Please enter all 4 digits.'); return; }
+
+  const fd = new FormData();
+  fd.append('phone', phone);
+  fd.append('otp', otp);
+
+  fetch('verify_otp.php', { method: 'POST', body: fd })
+  .then(res => res.json())
+  .then(data => {
+    if (data.status === 'success') {
+      otpVerifiedMap[phoneInputId] = true;
+      document.getElementById(verifiedId).style.display = 'block';
+      document.getElementById(otpSectionId).style.display = 'none';
+      boxes.forEach(b => { b.value = ''; });
+      showToast('✅ Verified!', 'Phone number verified successfully.');
+    } else {
+      showToast('❌ Wrong OTP', data.message || 'Incorrect OTP. Try again.');
+    }
+  })
+  .catch(() => showToast('❌ Error', 'Something went wrong.'));
+}
+
+// Patch form submissions to check OTP first
+const origEnquiry = document.getElementById('enquiryForm').onsubmit;
+document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+  if (!otpVerifiedMap['fPhone']) {
+    e.stopImmediatePropagation();
+    e.preventDefault();
+    showToast('⚠️ Verify Phone', 'Please send and verify OTP before submitting.');
+  }
+}, true);
+
+const origSyllabus = document.getElementById('syllabusLeadForm').onsubmit;
+document.getElementById('syllabusLeadForm').addEventListener('submit', function(e) {
+  if (!otpVerifiedMap['slPhone']) {
+    e.stopImmediatePropagation();
+    e.preventDefault();
+    showToast('⚠️ Verify Phone', 'Please send and verify OTP before submitting.');
+  }
+}, true);
+
+const origSubmitPayment = window.submitPayment;
+window.submitPayment = function() {
+  if (!otpVerifiedMap['payPhone']) {
+    showToast('⚠️ Verify Phone', 'Please send and verify OTP before submitting.');
+    return;
+  }
+  origSubmitPayment();
+};
+</script>
+</body>
+</html>
